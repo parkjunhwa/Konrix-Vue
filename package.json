@@ -29,6 +29,7 @@
     "@vueuse/core": "^12.3.0",
     "animate.css": "^4.1.1",
     "axios": "^1.7.9",
+    "custom-syntax": "^1.0.0",
     "dropzone": "^6.0.0-beta.2",
     "glightbox": "^3.3.0",
     "gridjs": "^6.2.0",
@@ -41,6 +42,7 @@
     "preline": "^2.7.0",
     "prismjs": "^1.29.0",
     "pristinejs": "^1.1.0",
+    "radix-vue": "^1.9.12",
     "rater-js": "^1.0.1",
     "shepherd.js": "^14.3.0",
     "shufflejs": "^6.1.1",
@@ -56,6 +58,7 @@
     "vue-simplebar": "^2.3.0",
     "vue-sweetalert2": "^5.0.11",
     "vue3-clipboard": "^1.0.0",
+    "vue3-dropzone": "^2.2.1",
     "wnumb": "^1.2.0"
   },
   "devDependencies": {
