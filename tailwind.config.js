@@ -38,11 +38,11 @@ export default {
       'bg-cyan-500/25',
   ],
   plugins: [
-    // require('preline/plugin'),
-    // require("@frostui/tailwindcss/plugin"),
-    // require("@tailwindcss/forms"),
-    // require("@tailwindcss/typography"),
-    // require("@tailwindcss/aspect-ratio"),
+    require('preline/plugin'),
+    require("@frostui/tailwindcss/plugin"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
   ],
 }
 

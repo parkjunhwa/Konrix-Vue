@@ -187,7 +187,12 @@
 
     <div class="hs-dropdown relative inline-flex">
       <button type="button" class="hs-dropdown-toggle nav-link">
-        <img src="@/assets/images/users/user-6.jpg" alt="user-image" class="rounded-full h-10" />
+        <div class="relative inline-flex">
+          <div class="w-8 h-8 justify-center items-center flex bg-primary rounded-full">
+            <span class="text-white">PJ</span>
+          </div>
+          <div class="absolute end-0 h-2 w-2 rounded-full border border-white bg-success"></div>
+        </div>
       </button>
       <div
         class="hs-dropdown-menu hs-dropdown-open:opacity-100 hidden opacity-0 w-44 z-50 transition-[margin,opacity] duration-300 mt-2 bg-white shadow-lg border rounded-lg p-2 border-gray-200 dark:border-gray-700 dark:bg-gray-800"
