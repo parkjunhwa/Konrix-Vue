@@ -220,7 +220,7 @@
                   <small>08:25 am</small>
                 </p>
                 <p class="text-gray-500 dark:text-gray-200">
-                  Download the new updates of Konrix admin dashboard
+                  Download the new updates of myungin admin dashboard
                 </p>
               </div>
               <div
@@ -284,7 +284,7 @@
                   <small>08:25 am</small>
                 </p>
                 <p class="text-gray-500 dark:text-gray-200">
-                  Download the new updates of Konrix admin dashboard
+                  Download the new updates of myungin admin dashboard
                 </p>
               </div>
               <div

@@ -6,7 +6,7 @@
 
     <div class="md:flex hidden items-center gap-2.5 text-sm font-semibold">
       <div class="flex items-center gap-2">
-        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Konrix</a>
+        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Home</a>
       </div>
 
       <div class="flex items-center gap-2">

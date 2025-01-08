@@ -62,7 +62,7 @@
                   <td class="px-6 py-4 text-sm font-medium text-gray-800 dark:text-gray-200">
                     This will install all necessary dependencies in the
                     <code>node_modules</code> folder. Once the installation is complete, you are
-                    ready to run Konrix for the first time.
+                    ready to run myungin template for the first time.
                   </td>
                 </tr>
 

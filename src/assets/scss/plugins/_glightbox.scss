@@ -3,15 +3,15 @@
 //
 
 @media (min-width: 769px) {
-    html.glightbox-open {
-        overflow: unset;
-    }
+  html.glightbox-open {
+    overflow: unset;
+  }
 }
 
-.glightbox-clean .gslide-description{
-    @apply bg-white dark:bg-slate-800;
+.glightbox-clean .gslide-description {
+  @apply bg-white dark:bg-slate-800;
 }
 
 .glightbox-clean .gslide-title {
-    @apply text-gray-600 dark:text-gray-300;
+  @apply text-gray-600 dark:text-gray-300;
 }

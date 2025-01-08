@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { useStorage } from '@vueuse/core'
 
 const fakeData = {
-  name: 'Konrix',
+  name: 'myungin',
   email: 'test@test.com',
   pass: 'password',
 }

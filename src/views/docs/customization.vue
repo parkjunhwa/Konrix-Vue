@@ -29,7 +29,7 @@
         </div>
         <div class="p-6">
           <p>
-            Konrix provides the RTL support as well. You will simply add attribute in html tage.
+            myungin provides the RTL support as well. You will simply add attribute in html tage.
           </p>
           <p>
             simply change the reference of update the html tag with attribute
@@ -45,7 +45,7 @@
         </div>
         <div class="p-6">
           <p class="mb-4">
-            Konrix allows you to have customized left sidebar, overall layout width or right
+            myungin allows you to have customized left sidebar, overall layout width or right
             sidebar. You could turn the left sidebar to different size, theme (look) and type. You
             can customize it by specifying the layout config data attribute on
             <code>html</code> element in your file

@@ -2,13 +2,13 @@
   <!-- Back to Top Button -->
   <button
     data-toggle="back-to-top"
-    class="fixed hidden h-10 w-10 items-center justify-center rounded-full z-10 bottom-20 end-14 p-2.5 bg-primary cursor-pointer shadow-lg text-white"
+    class="fixed hidden h-10 w-10 items-center justify-center rounded-full z-10 bottom-20 end-4 p-2.5 bg-primary cursor-pointer shadow-lg text-white"
   >
     <i class="mgc_arrow_up_line text-lg"></i>
   </button>
 
   <!-- Theme Settings -->
-  <div>
+  <!-- <div>
     <div class="fixed end-0 bottom-20">
       <button
         data-fc-type="offcanvas"
@@ -710,7 +710,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script lang="ts">

@@ -26,49 +26,6 @@
       </span>
     </button>
 
-    <div class="hs-dropdown relative inline-flex [--placement:bottom-right]">
-      <button type="button" class="hs-dropdown-toggle nav-link p-2">
-        <span class="flex items-center justify-center h-6 w-6">
-          <img src="@/assets/images/flags/us.jpg" alt="user-image" class="h-4 w-6" />
-        </span>
-      </button>
-      <div
-        class="hs-dropdown-menu hs-dropdown-open:opacity-100 hidden opacity-0 w-40 z-50 mt-2 transition-[margin,opacity] duration-300 bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 rounded-lg p-2"
-      >
-        <a
-          href="javascript:void(0);"
-          class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-        >
-          <img src="@/assets/images/flags/germany.jpg" alt="user-image" class="h-4" />
-          <span class="align-middle">German</span>
-        </a>
-
-        <a
-          href="javascript:void(0);"
-          class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-        >
-          <img src="@/assets/images/flags/italy.jpg" alt="user-image" class="h-4" />
-          <span class="align-middle">Italian</span>
-        </a>
-
-        <a
-          href="javascript:void(0);"
-          class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-        >
-          <img src="@/assets/images/flags/spain.jpg" alt="user-image" class="h-4" />
-          <span class="align-middle">Spanish</span>
-        </a>
-
-        <a
-          href="javascript:void(0);"
-          class="flex items-center gap-2.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
-        >
-          <img src="@/assets/images/flags/russia.jpg" alt="user-image" class="h-4" />
-          <span class="align-middle">Russian</span>
-        </a>
-      </div>
-    </div>
-
     <div class="md:flex hidden">
       <button data-toggle="fullscreen" type="button" class="nav-link p-2">
         <span class="sr-only">Fullscreen Mode</span>

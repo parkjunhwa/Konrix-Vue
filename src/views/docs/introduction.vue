@@ -6,7 +6,7 @@
       <div class="card">
         <div class="p-6">
           <p>
-            Konrix is a fully featured premium admin template built on top of awesome
+            myungin templete is a fully featured premium admin template built on top of awesome
             <strong class="text-danger">Tailwind v3</strong> and
             <strong class="text-danger">Vue v3</strong>. It's crafted using modern web technologies
             <strong class="text-danger">HTML5, CSS3 </strong>and
@@ -47,7 +47,7 @@
             <pre class="language-html">
             <code>
 ├── Documentation
-└── Konrix
+└── myungin
     ├── public
     ├── src/
     │   ├── assets
