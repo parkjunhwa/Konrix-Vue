@@ -1,16 +1,5 @@
 <template>
-  <div class="app-menu">
-    <a href="/" class="logo-box">
-      <div class="logo-light">
-        <img src="@/assets/images/logo-light.png" class="logo-lg h-6" alt="Light logo" />
-        <img src="@/assets/images/logo-sm.png" class="logo-sm" alt="Small logo" />
-      </div>
-
-      <div class="logo-dark">
-        <img src="@/assets/images/logo-dark.png" class="logo-lg h-6" alt="Dark logo" />
-        <img src="@/assets/images/logo-sm.png" class="logo-sm" alt="Small logo" />
-      </div>
-    </a>
+  <div class="app-menu z-10">
 
     <button id="button-hover-toggle" class="absolute top-5 end-2 rounded-full p-1.5">
       <span class="sr-only">Menu Toggle Button</span>
