@@ -3,10 +3,12 @@
     <Leftsidebar />
     <div class="page-content">
       <Topbar class="fix" />
-      <main class="flex-grow p-6">
-        <slot></slot>
-      </main>
-      <Footer />
+      <div class="flex flex-col" >
+        <main class="flex-grow p-6">
+          <slot></slot>
+        </main>
+        <Footer />
+      </div>
     </div>
     <Rightsidebar />
   </div>

@@ -7,24 +7,18 @@
       </span>
     </button>
 
-    <a href="/" class="logo-box">
-      <div class="logo-light">
-        <img src="@/assets/images/logo-light.png" class="logo-lg h-6" alt="Light logo" />
-        <img src="@/assets/images/logo-sm.png" class="logo-sm" alt="Small logo" />
-      </div>
-
+    <a href="/" class="logo-box me-auto">
       <div class="logo-dark">
-        <img src="@/assets/images/logo-dark.png" class="logo-lg h-6" alt="Dark logo" />
-        <img src="@/assets/images/logo-sm.png" class="logo-sm" alt="Small logo" />
+        <img src="@/assets/images/logo-dark.png" class="h-6" alt="Dark logo" />
       </div>
     </a>
 
-    <button type="button" data-hs-overlay="#topbar-search-modal" class="nav-link p-2 me-auto">
+    <!-- <button type="button" data-hs-overlay="#topbar-search-modal" class="nav-link p-2 me-auto">
       <span class="sr-only">Search</span>
       <span class="flex items-center justify-center h-6 w-6">
         <i class="mgc_search_line text-2xl"></i>
       </span>
-    </button>
+    </button> -->
 
     <!-- <div class="md:flex hidden">
       <button data-toggle="fullscreen" type="button" class="nav-link p-2">
