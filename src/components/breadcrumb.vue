@@ -1,31 +1,43 @@
 <template>
-  <div class="flex justify-between items-center mb-6">
-    <h4 class="text-slate-900 dark:text-slate-200 text-lg font-medium">
-      {{ title }}
-    </h4>
+  <div class="flex flex-col mb-6 gap-2">
+    <div class="md:flex hidden items-center mb-2 text-sm font-semibold">
+      <nav class="flex" aria-label="Breadcrumb">
+        <ol role="list" class="flex items-center text-sm font-semibold space-x-1">
+          <li>
+            <div class="flex items-center">
+              <a href="#" class="text-gray-400 hover:text-gray-500 align-middle w-5 h-5">
+                <i class="mgc_home_4_line text-lg flex-shrink-0 align-top"></i>
+                <span class="sr-only">Home</span>
+              </a>
+            </div>
+          </li>
 
-    <div class="md:flex hidden items-center gap-2.5 text-sm font-semibold">
-      <div class="flex items-center gap-2">
-        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">Home</a>
-      </div>
+          <li>
+            <div class="flex items-center">
+              <i class="mgc_right_line text-lg flex-shrink-0 text-gray-400"></i>
+              <a href="#" class="ms-1 text-sm font-medium text-gray-500 hover:text-gray-700">{{
+                subtitle
+              }}</a>
+            </div>
+          </li>
 
-      <div class="flex items-center gap-2">
-        <i class="mgc_right_line text-lg flex-shrink-0 text-slate-400 rtl:rotate-180"></i>
-        <a href="#" class="text-sm font-medium text-slate-700 dark:text-slate-400">{{
-          subtitle
-        }}</a>
-      </div>
-
-      <div class="flex items-center gap-2">
-        <i class="mgc_right_line text-lg flex-shrink-0 text-slate-400 rtl:rotate-180"></i>
-        <a
-          href="#"
-          class="text-sm font-medium text-slate-700 dark:text-slate-400"
-          aria-current="page"
-          >{{ title }}</a
-        >
-      </div>
+          <li>
+            <div class="flex items-center">
+              <i class="mgc_right_line text-lg flex-shrink-0 text-gray-400"></i>
+              <a
+                href="#"
+                class="ms-1 text-sm font-medium text-gray-700 hover:text-gray-700"
+                aria-current="page"
+                >{{ title }}</a
+              >
+            </div>
+          </li>
+        </ol>
+      </nav>
     </div>
+    <h2 class="text-slate-900 dark:text-slate-200 text-lg font-bold">
+      {{ title }}
+    </h2>
   </div>
 </template>
 
