@@ -4,11 +4,7 @@
 
     <topsearch-card />
     <div class="grid 2xl:grid-cols-12 gap-6 mb-6">
-      컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠
-      영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠
-      영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠
-      영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠
-      영역<br />컨텐츠 영역<br />컨텐츠 영역<br />
+      컨텐츠 영역
     </div>
     <div class="grid 2xl:grid-cols-12 gap-6 mb-6">
       <ToolbarRoot
