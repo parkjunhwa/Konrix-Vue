@@ -1,5 +1,5 @@
 <template>
-  <div class="app-menu z-10">
+  <div class="app-menu">
     <button id="button-hover-toggle" class="absolute top-5 end-2 rounded-full p-1.5">
       <span class="sr-only">Menu Toggle Button</span>
       <i class="mgc_round_line text-xl"></i>

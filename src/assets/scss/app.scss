@@ -69,3 +69,5 @@ div[data-radix-popper-content-wrapper] {
   top: 70px;
   @apply sticky;
 }
+
+html[data-sidenav-view=mobile].sidenav-enable .app-menu {z-index: 50;}
