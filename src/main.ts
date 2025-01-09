@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './router'
 
 
+
 // import VueApexCharts from 'vue3-apexcharts'
 import 'simplebar'
 // import 'jsvectormap'
@@ -62,7 +63,7 @@ const MetaPlug: Plugin = {
       methods: {
         useMeta(item: { [key: string]: any }) {
           document.head.querySelector('title')!.innerHTML =
-            item['title'] + ' | Konrix - Responsive Tailwind Admin Dashboard'
+            item['title'] + ' | 명인제약 - UBsales Dashboard'
         },
       },
     })
