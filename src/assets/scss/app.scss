@@ -63,3 +63,9 @@
 div[data-radix-popper-content-wrapper] {
   z-index: 6;
 }
+
+.content-area {
+  height: calc(100vh - 70px);
+  top:70px;
+  @apply sticky;
+}
