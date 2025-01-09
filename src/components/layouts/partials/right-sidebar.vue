@@ -8,7 +8,7 @@
   </button>
 
   <!-- Theme Settings -->
-  <!-- <div>
+  <div>
     <div class="fixed end-0 bottom-20">
       <button
         data-fc-type="offcanvas"
@@ -710,7 +710,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 </template>
 
 <script lang="ts">

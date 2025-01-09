@@ -1,6 +1,8 @@
 <template>
   <Layout>
     <Breadcrumb title="타이틀 입력" subtitle="서브메뉴 입력" />
+
+    <topsearch-card />
     <div class="grid 2xl:grid-cols-12 gap-6 mb-6">
       컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠
       영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠 영역<br />컨텐츠
@@ -160,7 +162,13 @@ import {
   PopoverPortal,
   PopoverRoot,
   PopoverTrigger,
+  TabsContent,
+  TabsIndicator,
+  TabsList,
+  TabsRoot,
+  TabsTrigger,
 } from 'radix-vue'
+
 import { Icon } from '@iconify/vue'
 import { ref } from 'vue'
 

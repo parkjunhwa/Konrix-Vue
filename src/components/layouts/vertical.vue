@@ -1,8 +1,8 @@
 <template>
-  <div class="flex wrapper">
-    <Leftsidebar />
+  <div class="flex wrapper flex-col">
+    <Topbar />
     <div class="page-content">
-      <Topbar />
+      <Leftsidebar />
       <main class="flex-grow p-6">
         <slot></slot>
       </main>
