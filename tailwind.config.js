@@ -2,9 +2,10 @@
 export default {
   content: [
     "./index.html",
+    "./src/*.{vue,js,ts,jsx,tsx}",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
     "node_modules/@frostui/tailwindcss/**/*.js",
-    'node_modules/preline/dist/*.js',
+    "node_modules/preline/dist/*.js",
   ],
   darkMode: ["class", '[data-mode="dark"]'],
   theme: {
