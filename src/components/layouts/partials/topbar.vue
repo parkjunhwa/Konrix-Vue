@@ -6,28 +6,13 @@
         <i class="mgc_menu_line text-xl"></i>
       </span>
     </button>
-
-    <a href="/" class="logo-box me-auto">
-      <div class="logo-dark">
-        <img src="@/assets/images/logo-dark.png" class="h-6" alt="Dark logo" />
-      </div>
-    </a>
-
-    <!-- <button type="button" data-hs-overlay="#topbar-search-modal" class="nav-link p-2 me-auto">
-      <span class="sr-only">Search</span>
-      <span class="flex items-center justify-center h-6 w-6">
-        <i class="mgc_search_line text-2xl"></i>
-      </span>
-    </button> -->
-
-    <!-- <div class="md:flex hidden">
-      <button data-toggle="fullscreen" type="button" class="nav-link p-2">
-        <span class="sr-only">Fullscreen Mode</span>
-        <span class="flex items-center justify-center h-6 w-6">
-          <i class="mgc_fullscreen_line text-2xl"></i>
-        </span>
-      </button>
-    </div> -->
+    <div class="flex me-auto">
+      <a href="/" class="logo-box">
+        <div class="logo-dark">
+          <img src="@/assets/images/logo-dark.png" class="h-6" alt="Dark logo" />
+        </div>
+      </a>
+    </div>
 
     <div class="hs-dropdown relative inline-flex md:flex">
       <button type="button" class="hs-dropdown-toggle nav-link p-2">
