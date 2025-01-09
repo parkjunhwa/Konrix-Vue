@@ -26,21 +26,24 @@
       </span>
     </button>
 
-    <div class="md:flex hidden">
+    <!-- <div class="md:flex hidden">
       <button data-toggle="fullscreen" type="button" class="nav-link p-2">
         <span class="sr-only">Fullscreen Mode</span>
         <span class="flex items-center justify-center h-6 w-6">
           <i class="mgc_fullscreen_line text-2xl"></i>
         </span>
       </button>
-    </div>
+    </div> -->
 
     <div class="hs-dropdown relative inline-flex md:flex">
       <button type="button" class="hs-dropdown-toggle nav-link p-2">
-        <span class="sr-only">View notifications</span>
-        <span class="flex items-center justify-center h-6 w-6">
-          <i class="mgc_notification_line text-2xl"></i>
-        </span>
+        <div class="relative inline-flex">
+          <span class="sr-only">View notifications</span>
+          <span class="flex items-center justify-center h-6 w-6">
+            <i class="mgc_notification_line text-2xl"></i>
+          </span>
+          <div class="absolute end-0 h-2 w-2 rounded-full border border-white bg-success"></div>
+        </div>
       </button>
       <div
         class="hs-dropdown-menu hs-dropdown-open:opacity-100 hidden opacity-0 w-80 z-50 mt-2 transition-[margin,opacity] duration-300 bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 rounded-lg"
@@ -176,14 +179,14 @@
       </div>
     </div>
 
-    <div class="flex">
+    <!-- <div class="flex">
       <button id="light-dark-mode" type="button" class="nav-link p-2">
         <span class="sr-only">Light/Dark Mode</span>
         <span class="flex items-center justify-center h-6 w-6">
           <i class="mgc_moon_line text-2xl"></i>
         </span>
       </button>
-    </div>
+    </div> -->
 
     <div class="hs-dropdown relative inline-flex">
       <button type="button" class="hs-dropdown-toggle nav-link">

@@ -2,7 +2,7 @@
   <div class="flex wrapper">
     <Leftsidebar />
     <div class="page-content">
-      <Topbar />
+      <Topbar class="fix" />
       <main class="flex-grow p-6">
         <slot></slot>
       </main>

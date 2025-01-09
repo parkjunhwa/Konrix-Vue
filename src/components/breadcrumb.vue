@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col mb-6 gap-2">sss
+  <div class="flex flex-col mb-6 gap-2">
     <div class="md:flex hidden items-center mb-2 text-sm font-semibold">
       <nav class="flex" aria-label="Breadcrumb">
         <ol role="list" class="flex items-center text-sm font-semibold space-x-1">
