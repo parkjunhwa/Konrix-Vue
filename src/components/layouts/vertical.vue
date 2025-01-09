@@ -1,16 +1,18 @@
 <template>
-  <div class="flex wrapper">
-    <Leftsidebar />
-    <div class="page-content">
-      <Topbar class="fix" />
-      <div class="flex flex-col" >
-        <main class="flex-grow p-6">
-          <slot></slot>
-        </main>
-        <Footer />
+  <div class="flex wrapper flex-col">
+    <Topbar class="fix" />
+    <div class="flex wrapper flex-row">
+      <Leftsidebar />
+      <div class="page-content">
+        <div class="flex flex-col content-area">
+          <main class="flex-grow p-6">
+            <slot></slot>
+          </main>
+          <Footer />
+        </div>
       </div>
+      <Rightsidebar />
     </div>
-    <Rightsidebar />
   </div>
 </template>
 
