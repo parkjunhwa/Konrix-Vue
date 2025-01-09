@@ -8,10 +8,10 @@ import router from './router'
 // import VueApexCharts from 'vue3-apexcharts'
 import 'simplebar'
 // import 'jsvectormap'
-import VueFeather from 'vue-feather';
+// import VueFeather from 'vue-feather';
 // import VuePlyr from 'vue-plyr'
 import VueSweetalert2 from 'vue-sweetalert2'
-import VueTheMask from "vue-the-mask";
+// import VueTheMask from "vue-the-mask";
 
 
 import jQuery from 'jquery'
