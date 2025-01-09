@@ -1,0 +1,33 @@
+
+/*
+  respond-to() 믹스인:
+  - $breakpoint에 'sm', 'md', 'lg', 'xl', '2xl' 등을 넘기면
+  - Tailwind의 @screen 디렉티브를 통해 해당 미디어 쿼리 구문을 생성합니다.
+*/
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'sm' {
+    @screen sm {
+      @content;
+    }
+  } @else if $breakpoint == 'md' {
+    @screen md {
+      @content;
+    }
+  } @else if $breakpoint == 'lg' {
+    @screen lg {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @screen xl {
+      @content;
+    }
+  } @else if $breakpoint == '2xl' {
+    @screen 2xl {
+      @content;
+    }
+  } @else {
+    /* 필요한 경우, 예외 처리를 추가할 수 있습니다. */
+    @warn "Unknown breakpoint: #{$breakpoint}.";
+  }
+}

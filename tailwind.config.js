@@ -1,3 +1,6 @@
+const { blackA, blue, green, mauve, violet, red, indigo, purple, grass, teal } = require('@radix-ui/colors')
+const plugin = require('tailwindcss/plugin')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -19,6 +22,7 @@ export default {
 
     extend: {
       colors: {
+        // tailwind세팅
         primary: "#3073F1",
         secondary: "#68625D",
         success: "#1CB454",
@@ -27,6 +31,17 @@ export default {
         danger: "#E63535",
         light: "#eef2f7",
         dark: "#313a46",
+        // radix세팅
+        ...blackA,
+        ...blue,
+        ...green,
+        ...mauve,
+        ...violet,
+        ...red,
+        ...indigo,
+        ...purple,
+        ...grass,
+        ...teal,
       },
     },
   },
