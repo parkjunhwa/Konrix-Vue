@@ -23,13 +23,17 @@ import { Toaster, toast } from 'vue-sonner'
         Open Dialog
       </DialogTrigger>
       <DialogPortal>
-        <DialogOverlay class="bg-blackA9 data-[state=open]:animate-overlayShow fixed inset-0 z-30" />
+        <DialogOverlay
+          class="bg-blackA9 data-[state=open]:animate-overlayShow fixed inset-0 z-30"
+        />
         <DialogContent
           class="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none z-[100]"
-          @interact-outside="event => {
-            const target = event.target as HTMLElement;
-            if (target?.closest('[data-sonner-toaster]')) return event.preventDefault()
-          }"
+          @interact-outside="
+            (event) => {
+              const target = event.target as HTMLElement
+              if (target?.closest('[data-sonner-toaster]')) return event.preventDefault()
+            }
+          "
         >
           <DialogTitle class="text-mauve12 m-0 text-[17px] font-semibold">
             Dialog Title
@@ -40,12 +44,15 @@ import { Toaster, toast } from 'vue-sonner'
 
           <button
             class="bg-green4 text-green11 hover:bg-green5 focus:shadow-green7 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-semibold leading-none focus:shadow-[0_0_0_2px] focus:outline-none"
-            @click="() => toast('Event has been created', {
-              action: {
-                label: 'Undo',
-                onClick: () => console.log('Undo'),
-              },
-            })"
+            @click="
+              () =>
+                toast('Event has been created', {
+                  action: {
+                    label: 'Undo',
+                    onClick: () => console.log('Undo'),
+                  },
+                })
+            "
           >
             Give me a toast
           </button>

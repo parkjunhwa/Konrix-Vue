@@ -25,7 +25,7 @@ const checkboxTwo = ref(false)
 const person = ref('pedro')
 
 function handleClick() {
-  // eslint-disable-next-line no-alert
+   
   alert('hello!')
 }
 </script>
@@ -277,7 +277,9 @@ function handleClick() {
           v-model:checked="checkboxOne"
           class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
         >
-          <DropdownMenuItemIndicator class="absolute left-0 w-[25px] inline-flex items-center justify-center">
+          <DropdownMenuItemIndicator
+            class="absolute left-0 w-[25px] inline-flex items-center justify-center"
+          >
             <Icon icon="radix-icons:check" />
           </DropdownMenuItemIndicator>
           Show Bookmarks
@@ -291,7 +293,9 @@ function handleClick() {
           v-model:checked="checkboxTwo"
           class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
         >
-          <DropdownMenuItemIndicator class="absolute left-0 w-[25px] inline-flex items-center justify-center">
+          <DropdownMenuItemIndicator
+            class="absolute left-0 w-[25px] inline-flex items-center justify-center"
+          >
             <Icon icon="radix-icons:check" />
           </DropdownMenuItemIndicator>
           Show Full URLs
@@ -306,7 +310,9 @@ function handleClick() {
             class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
             value="pedro"
           >
-            <DropdownMenuItemIndicator class="absolute left-0 w-[25px] inline-flex items-center justify-center">
+            <DropdownMenuItemIndicator
+              class="absolute left-0 w-[25px] inline-flex items-center justify-center"
+            >
               <Icon icon="radix-icons:dot-filled" />
             </DropdownMenuItemIndicator>
             Pedro Duarte
@@ -315,7 +321,9 @@ function handleClick() {
             class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
             value="colm"
           >
-            <DropdownMenuItemIndicator class="absolute left-0 w-[25px] inline-flex items-center justify-center">
+            <DropdownMenuItemIndicator
+              class="absolute left-0 w-[25px] inline-flex items-center justify-center"
+            >
               <Icon icon="radix-icons:dot-filled" />
             </DropdownMenuItemIndicator>
             Colm Tuite

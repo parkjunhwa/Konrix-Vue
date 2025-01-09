@@ -226,7 +226,6 @@
       </div>
     </div>
   </header>
-
 </template>
 
 <script lang="ts">

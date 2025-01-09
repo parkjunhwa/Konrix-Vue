@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import { AccordionContent, AccordionHeader, AccordionItem, AccordionRoot, AccordionTrigger } from 'radix-vue'
+import {
+  AccordionContent,
+  AccordionHeader,
+  AccordionItem,
+  AccordionRoot,
+  AccordionTrigger,
+} from 'radix-vue'
 import { Icon } from '@iconify/vue'
 
 const accordionItems = [
@@ -11,7 +17,7 @@ const accordionItems = [
   {
     value: 'item-2',
     title: 'Is it unstyled?',
-    content: 'Yes. It\'s unstyled by default, giving you freedom over the look and feel.',
+    content: "Yes. It's unstyled by default, giving you freedom over the look and feel.",
   },
   {
     value: 'item-3',
@@ -28,16 +34,15 @@ const accordionItems = [
     type="single"
     :collapsible="true"
   >
-    <template
-      v-for="item in accordionItems"
-      :key="item.value"
-    >
+    <template v-for="item in accordionItems" :key="item.value">
       <AccordionItem
         class="focus-within:shadow-mauve12 mt-px overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10 focus-within:shadow-[0_0_0_2px]"
         :value="item.value"
       >
         <AccordionHeader class="flex">
-          <AccordionTrigger class="text-grass11 shadow-mauve6 hover:bg-mauve2 flex h-[45px] flex-1 cursor-default items-center justify-between bg-white px-5 text-[15px] leading-none shadow-[0_1px_0] outline-none group">
+          <AccordionTrigger
+            class="text-grass11 shadow-mauve6 hover:bg-mauve2 flex h-[45px] flex-1 cursor-default items-center justify-between bg-white px-5 text-[15px] leading-none shadow-[0_1px_0] outline-none group"
+          >
             <span>{{ item.title }}</span>
             <Icon
               icon="radix-icons:chevron-down"
@@ -46,7 +51,9 @@ const accordionItems = [
             />
           </AccordionTrigger>
         </AccordionHeader>
-        <AccordionContent class="text-mauve11 bg-mauve2 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-[15px]">
+        <AccordionContent
+          class="text-mauve11 bg-mauve2 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden text-[15px]"
+        >
           <div class="px-5 py-4">
             {{ item.content }}
           </div>

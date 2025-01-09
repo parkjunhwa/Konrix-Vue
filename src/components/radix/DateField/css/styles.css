@@ -43,7 +43,7 @@
   padding: 0.25rem;
 }
 
-.DateFieldSegment:hover{
+.DateFieldSegment:hover {
   background-color: var(--grass-4);
 }
 

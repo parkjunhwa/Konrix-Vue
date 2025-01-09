@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { TooltipArrow, TooltipContent, TooltipPortal, TooltipProvider, TooltipRoot, TooltipTrigger } from 'radix-vue'
+import {
+  TooltipArrow,
+  TooltipContent,
+  TooltipPortal,
+  TooltipProvider,
+  TooltipRoot,
+  TooltipTrigger,
+} from 'radix-vue'
 import { Icon } from '@iconify/vue'
 </script>
 
@@ -17,10 +24,7 @@ import { Icon } from '@iconify/vue'
           :side-offset="5"
         >
           Add to library
-          <TooltipArrow
-            class="fill-white"
-            :width="8"
-          />
+          <TooltipArrow class="fill-white" :width="8" />
         </TooltipContent>
       </TooltipPortal>
     </TooltipRoot>

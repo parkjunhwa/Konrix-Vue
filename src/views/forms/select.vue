@@ -93,13 +93,13 @@ export default {
   mounted() {
     console.info(NiceSelect)
     // default
-    var els = document.querySelectorAll('.selectize')
+    const els = document.querySelectorAll('.selectize')
     els.forEach(function (select) {
       new NiceSelect(select, {})
     })
 
     // seachable
-    var options = {
+    const options = {
       searchable: true,
     }
     new NiceSelect(document.getElementById('search-select'), options)

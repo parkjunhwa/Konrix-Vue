@@ -232,14 +232,14 @@ export default {
   components: { CustomSyntax, Layout, Breadcrumb },
   mounted() {
     // GLightbox Popup
-    var lightbox = GLightbox({
+    const lightbox = GLightbox({
       selector: '.image-popup',
       title: false,
     })
 
     // GLightbox Popup
 
-    var lightboxDesc = GLightbox({
+    const lightboxDesc = GLightbox({
       selector: '.image-popup-desc',
     })
 

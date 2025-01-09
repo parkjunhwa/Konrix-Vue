@@ -7,18 +7,10 @@ const sliderValue = ref([50])
 </script>
 
 <template>
-  <SliderRoot
-    v-model="sliderValue"
-    class="SliderRoot"
-    :max="100"
-    :step="1"
-  >
+  <SliderRoot v-model="sliderValue" class="SliderRoot" :max="100" :step="1">
     <SliderTrack class="SliderTrack">
       <SliderRange class="SliderRange" />
     </SliderTrack>
-    <SliderThumb
-      class="SliderThumb"
-      aria-label="Volume"
-    />
+    <SliderThumb class="SliderThumb" aria-label="Volume" />
   </SliderRoot>
 </template>

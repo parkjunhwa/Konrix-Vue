@@ -40,13 +40,13 @@
   color: #9ca3af;
 }
 
-.StepperItem[data-state="active"] .StepperIndicator {
+.StepperItem[data-state='active'] .StepperIndicator {
   background-color: #000;
   color: #fff;
   box-shadow: 0 0 0 2px #000;
 }
 
-.StepperItem[data-state="completed"] .StepperIndicator {
+.StepperItem[data-state='completed'] .StepperIndicator {
   background-color: var(--green9);
   color: #fff;
   box-shadow: 0 0 0 2px var(--green9);
@@ -75,11 +75,11 @@
   background-color: var(--green5);
 }
 
-.StepperItem[data-state="active"] .StepperSeparator {
+.StepperItem[data-state='active'] .StepperSeparator {
   background-color: #000;
 }
 
-.StepperItem[data-state="completed"] .StepperSeparator {
+.StepperItem[data-state='completed'] .StepperSeparator {
   background-color: var(--green9);
 }
 

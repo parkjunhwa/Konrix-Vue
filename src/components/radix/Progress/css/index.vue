@@ -12,11 +12,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <ProgressRoot
-    v-model="progressValue"
-    class="ProgressRoot"
-    style="transform: translateZ(0)"
-  >
+  <ProgressRoot v-model="progressValue" class="ProgressRoot" style="transform: translateZ(0)">
     <ProgressIndicator
       class="ProgressIndicator"
       :style="`transform: translateX(-${100 - progressValue}%)`"

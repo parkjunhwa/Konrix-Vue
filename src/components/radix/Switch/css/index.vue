@@ -8,20 +8,9 @@ const switchState = ref(false)
 
 <template>
   <div :style="{ display: 'flex', alignItems: 'center' }">
-    <label
-      class="Label"
-      for="airplane-mode"
-    >
-      Airplane mode
-    </label>
-    <SwitchRoot
-      id="airplane-mode"
-      v-model:checked="switchState"
-      class="SwitchRoot"
-    >
-      <SwitchThumb
-        class="SwitchThumb"
-      />
+    <label class="Label" for="airplane-mode"> Airplane mode </label>
+    <SwitchRoot id="airplane-mode" v-model:checked="switchState" class="SwitchRoot">
+      <SwitchThumb class="SwitchThumb" />
     </SwitchRoot>
   </div>
 </template>

@@ -116,7 +116,7 @@ export default {
   },
 
   mounted() {
-    var tour = new Shepherd.Tour(this.options)
+    const tour = new Shepherd.Tour(this.options)
 
     if (document.querySelector('#logo-tour'))
       tour.addStep({

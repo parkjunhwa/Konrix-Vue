@@ -181,11 +181,11 @@ export default {
      * polygon editing
      */
     updateEdited(mvcArray: any) {
-      let paths = []
+      const paths = []
       for (let i = 0; i < mvcArray.getLength(); i++) {
-        let path = []
+        const path = []
         for (let j = 0; j < mvcArray.getAt(i).getLength(); j++) {
-          let point = mvcArray.getAt(i).getAt(j)
+          const point = mvcArray.getAt(i).getAt(j)
           path.push({ lat: point.lat(), lng: point.lng() })
         }
         paths.push(path)

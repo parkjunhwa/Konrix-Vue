@@ -3,9 +3,7 @@
     <Breadcrumb title="타이틀 입력" subtitle="서브메뉴 입력" />
 
     <topsearch-card />
-    <div class="grid 2xl:grid-cols-12 gap-6 mb-6">
-      컨텐츠 영역
-    </div>
+    <div class="grid 2xl:grid-cols-12 gap-6 mb-6">컨텐츠 영역</div>
     <div class="grid 2xl:grid-cols-12 gap-6 mb-6">
       <ToolbarRoot
         class="flex p-[10px] w-full max-w-[610px] !min-w-max rounded-md bg-white shadow-sm shadow-blackA7"

@@ -38,9 +38,7 @@ const items = [
     :get-key="(item) => item.title"
     :default-expanded="['components']"
   >
-    <h2 class="font-semibold !text-base text-blackA11 px-2 pt-1">
-      Directory Structure
-    </h2>
+    <h2 class="font-semibold !text-base text-blackA11 px-2 pt-1">Directory Structure</h2>
     <TreeItem
       v-for="item in flattenItems"
       v-slot="{ isExpanded }"
@@ -50,22 +48,10 @@ const items = [
       class="flex items-center py-1 px-2 my-0.5 rounded outline-none focus:ring-grass8 focus:ring-2 data-[selected]:bg-grass4"
     >
       <template v-if="item.hasChildren">
-        <Icon
-          v-if="!isExpanded"
-          icon="lucide:folder"
-          class="h-4 w-4"
-        />
-        <Icon
-          v-else
-          icon="lucide:folder-open"
-          class="h-4 w-4"
-        />
+        <Icon v-if="!isExpanded" icon="lucide:folder" class="h-4 w-4" />
+        <Icon v-else icon="lucide:folder-open" class="h-4 w-4" />
       </template>
-      <Icon
-        v-else
-        :icon="item.value.icon || 'lucide:file'"
-        class="h-4 w-4"
-      />
+      <Icon v-else :icon="item.value.icon || 'lucide:file'" class="h-4 w-4" />
       <div class="pl-2">
         {{ item.value.title }}
       </div>

@@ -23,7 +23,7 @@ const checkboxOne = ref(false)
 const checkboxTwo = ref(false)
 const person = ref('pedro')
 function handleClick() {
-  // eslint-disable-next-line no-alert
+   
   alert('hello!')
 }
 </script>
@@ -50,7 +50,9 @@ function handleClick() {
             class="group text-[13px] leading-none text-grass11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-green9 data-[highlighted]:to-green10 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:text-green1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none"
           >
             New Tab
-            <div class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
+            <div
+              class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
+            >
               ⌘ T
             </div>
           </MenubarItem>
@@ -58,7 +60,9 @@ function handleClick() {
             class="group text-[13px] leading-none text-grass11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-green9 data-[highlighted]:to-green10 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:text-green1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none"
           >
             New Window
-            <div class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
+            <div
+              class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
+            >
               ⌘ N
             </div>
           </MenubarItem>
@@ -108,7 +112,9 @@ function handleClick() {
             class="group text-[13px] leading-none text-grass11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-green9 data-[highlighted]:to-green10 data-[highlighted]:text-green1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none"
           >
             Print…
-            <div class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
+            <div
+              class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
+            >
               ⌘ P
             </div>
           </MenubarItem>
@@ -133,7 +139,9 @@ function handleClick() {
             class="group text-[13px] leading-none text-grass11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-green9 data-[highlighted]:to-green10 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:text-green1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none"
           >
             Undo
-            <div class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
+            <div
+              class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
+            >
               ⌘ Z
             </div>
           </MenubarItem>
@@ -141,7 +149,9 @@ function handleClick() {
             class="group text-[13px] leading-none text-grass11 rounded flex items-center h-[25px] px-[10px] relative select-none outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-green9 data-[highlighted]:to-green10 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:text-green1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none"
           >
             Redo
-            <div class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
+            <div
+              class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
+            >
               ⇧ ⌘ Z
             </div>
           </MenubarItem>
@@ -224,7 +234,9 @@ function handleClick() {
             v-model="checkboxOne"
             class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[20px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
           >
-            <MenubarItemIndicator class="absolute left-0 w-[20px] inline-flex items-center justify-center">
+            <MenubarItemIndicator
+              class="absolute left-0 w-[20px] inline-flex items-center justify-center"
+            >
               <Icon icon="radix-icons:check" />
             </MenubarItemIndicator>
             Show Bookmarks
@@ -238,7 +250,9 @@ function handleClick() {
             v-model="checkboxTwo"
             class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[20px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
           >
-            <MenubarItemIndicator class="absolute left-0 w-[20px] inline-flex items-center justify-center">
+            <MenubarItemIndicator
+              class="absolute left-0 w-[20px] inline-flex items-center justify-center"
+            >
               <Icon icon="radix-icons:check" />
             </MenubarItemIndicator>
             Show Full URLs
@@ -248,7 +262,9 @@ function handleClick() {
             class="group text-[13px] leading-none text-grass11 rounded flex items-center h-[25px] px-[10px] relative select-none pl-5 outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[highlighted]:bg-gradient-to-br data-[highlighted]:from-green9 data-[highlighted]:to-green10 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:text-green1 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none"
           >
             Reload
-            <div class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
+            <div
+              class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
+            >
               ⌘ R
             </div>
           </MenubarItem>
@@ -257,7 +273,9 @@ function handleClick() {
             disabled
           >
             Force Reload
-            <div class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8">
+            <div
+              class="ml-auto pl-5 text-mauve9 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
+            >
               ⇧ ⌘ R
             </div>
           </MenubarItem>
@@ -295,7 +313,9 @@ function handleClick() {
               class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[20px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
               value="pedro"
             >
-              <MenubarItemIndicator class="absolute left-0 w-[20px] inline-flex items-center justify-center">
+              <MenubarItemIndicator
+                class="absolute left-0 w-[20px] inline-flex items-center justify-center"
+              >
                 <Icon icon="radix-icons:dot-filled" />
               </MenubarItemIndicator>
               Pedro Duarte
@@ -304,7 +324,9 @@ function handleClick() {
               class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[20px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
               value="colm"
             >
-              <MenubarItemIndicator class="absolute left-0 w-[20px] inline-flex items-center justify-center">
+              <MenubarItemIndicator
+                class="absolute left-0 w-[20px] inline-flex items-center justify-center"
+              >
                 <Icon icon="radix-icons:dot-filled" />
               </MenubarItemIndicator>
               Colm Tuite

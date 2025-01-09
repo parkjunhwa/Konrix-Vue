@@ -1,6 +1,20 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { CalendarCell, CalendarCellTrigger, CalendarGrid, CalendarGridBody, CalendarGridHead, CalendarGridRow, CalendarHeadCell, CalendarHeader, CalendarHeading, CalendarNext, CalendarPrev, CalendarRoot, type CalendarRootProps } from 'radix-vue'
+import {
+  CalendarCell,
+  CalendarCellTrigger,
+  CalendarGrid,
+  CalendarGridBody,
+  CalendarGridHead,
+  CalendarGridRow,
+  CalendarHeadCell,
+  CalendarHeader,
+  CalendarHeading,
+  CalendarNext,
+  CalendarPrev,
+  CalendarRoot,
+  type CalendarRootProps,
+} from 'radix-vue'
 import './styles.css'
 
 const isDateUnavailable: CalendarRootProps['isDateUnavailable'] = (date) => {
@@ -16,39 +30,19 @@ const isDateUnavailable: CalendarRootProps['isDateUnavailable'] = (date) => {
     fixed-weeks
   >
     <CalendarHeader class="CalendarHeader">
-      <CalendarPrev
-        class="CalendarNavButton"
-      >
-        <Icon
-          icon="radix-icons:chevron-left"
-          class="Icon"
-        />
+      <CalendarPrev class="CalendarNavButton">
+        <Icon icon="radix-icons:chevron-left" class="Icon" />
       </CalendarPrev>
       <CalendarHeading class="CalendarHeading" />
-      <CalendarNext
-        class="CalendarNavButton"
-      >
-        <Icon
-          icon="radix-icons:chevron-right"
-          class="Icon"
-        />
+      <CalendarNext class="CalendarNavButton">
+        <Icon icon="radix-icons:chevron-right" class="Icon" />
       </CalendarNext>
     </CalendarHeader>
-    <div
-      class="CalendarWrapper"
-    >
-      <CalendarGrid
-        v-for="month in grid"
-        :key="month.value.toString()"
-        class="CalendarGrid"
-      >
+    <div class="CalendarWrapper">
+      <CalendarGrid v-for="month in grid" :key="month.value.toString()" class="CalendarGrid">
         <CalendarGridHead>
           <CalendarGridRow class="CalendarGridRow">
-            <CalendarHeadCell
-              v-for="day in weekDays"
-              :key="day"
-              class="CalendarHeadCell"
-            >
+            <CalendarHeadCell v-for="day in weekDays" :key="day" class="CalendarHeadCell">
               {{ day }}
             </CalendarHeadCell>
           </CalendarGridRow>

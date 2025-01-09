@@ -5,22 +5,16 @@ import './styles.css'
 
 <template>
   <div class="DateFieldWrapper">
-    <Label
-      class="DateFieldLabel"
-      for="date-field"
-    >Input label</Label>
+    <Label class="DateFieldLabel" for="date-field">Input label</Label>
 
     <DateRangeFieldRoot
       id="date-field"
       v-slot="{ segments }"
-      :is-date-unavailable="date => date.day === 19"
+      :is-date-unavailable="(date) => date.day === 19"
       granularity="second"
       class="DateField"
     >
-      <template
-        v-for="item in segments.start"
-        :key="item.part"
-      >
+      <template v-for="item in segments.start" :key="item.part">
         <DateRangeFieldInput
           v-if="item.part === 'literal'"
           :part="item.part"
@@ -29,20 +23,12 @@ import './styles.css'
         >
           {{ item.value }}
         </DateRangeFieldInput>
-        <DateRangeFieldInput
-          v-else
-          :part="item.part"
-          class="DateFieldSegment"
-          type="start"
-        >
+        <DateRangeFieldInput v-else :part="item.part" class="DateFieldSegment" type="start">
           {{ item.value }}
         </DateRangeFieldInput>
       </template>
       -
-      <template
-        v-for="item in segments.end"
-        :key="item.part"
-      >
+      <template v-for="item in segments.end" :key="item.part">
         <DateRangeFieldInput
           v-if="item.part === 'literal'"
           :part="item.part"
@@ -51,12 +37,7 @@ import './styles.css'
         >
           {{ item.value }}
         </DateRangeFieldInput>
-        <DateRangeFieldInput
-          v-else
-          :part="item.part"
-          class="DateFieldSegment"
-          type="end"
-        >
+        <DateRangeFieldInput v-else :part="item.part" class="DateFieldSegment" type="end">
           {{ item.value }}
         </DateRangeFieldInput>
       </template>
