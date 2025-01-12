@@ -117,7 +117,7 @@ export default {
   },
   methods: {
     basic() {
-      let slider = document.getElementById<HTMLElement>('slider')
+      const slider = document.getElementById<HTMLElement>('slider')
       if (slider) {
         noUiSlider.create(slider, {
           start: [20, 80],
@@ -130,9 +130,9 @@ export default {
       }
     },
     colorPicker() {
-      let resultElement = document.getElementById<HTMLElement>('result')
-      let sliders = document.getElementsByClassName<HTMLElement>('sliders')
-      let colors = [0, 0, 0]
+      const resultElement = document.getElementById<HTMLElement>('result')
+      const sliders = document.getElementsByClassName<HTMLElement>('sliders')
+      const colors = [0, 0, 0]
 
       ;[].slice.call(sliders).forEach(function (slider, index) {
         noUiSlider.create(slider, {
@@ -152,7 +152,7 @@ export default {
         slider.noUiSlider.on('update', function () {
           colors[index] = slider.noUiSlider.get()
 
-          let color = 'rgb(' + colors.join(',') + ')'
+          const color = 'rgb(' + colors.join(',') + ')'
 
           resultElement!.style.background = color
           resultElement!.style.color = color
@@ -160,18 +160,18 @@ export default {
       })
     },
     usingInputElements() {
-      let select = document.getElementById<HTMLElement>('input-select')
+      const select = document.getElementById<HTMLElement>('input-select')
 
       // Append the option elements
       for (let i = -20; i <= 40; i++) {
-        let option = document.createElement<HTMLElement>('option')
+        const option = document.createElement<HTMLElement>('option')
         option.text = i
         option.value = i
 
         if (select) select.appendChild(option)
       }
 
-      let html5Slider = document.getElementById<HTMLElement>('html5')
+      const html5Slider = document.getElementById<HTMLElement>('html5')
 
       if (html5Slider) {
         noUiSlider.create(html5Slider, {
@@ -184,10 +184,10 @@ export default {
         })
       }
 
-      let inputNumber = document.getElementById('input-number')
+      const inputNumber = document.getElementById('input-number')
 
       html5Slider.noUiSlider.on('update', function (values, handle) {
-        let value = values[handle]
+        const value = values[handle]
 
         if (handle && inputNumber) {
           inputNumber.value = value
@@ -205,7 +205,7 @@ export default {
       })
     },
     nonLinearSlider() {
-      let nonLinearSlider = document.getElementById('nonlinear')
+      const nonLinearSlider = document.getElementById('nonlinear')
 
       if (nonLinearSlider) {
         noUiSlider.create(nonLinearSlider, {
@@ -223,7 +223,7 @@ export default {
         })
       }
 
-      let nodes = [
+      const nodes = [
         document.getElementById<HTMLElement>('lower-value'), // 0
         document.getElementById<HTMLElement>('upper-value'), // 1
       ]
@@ -239,15 +239,15 @@ export default {
     },
     lockingSliders() {
       let lockedState = false
-      let lockedSlider = false
+      const lockedSlider = false
       let lockedValues = [60, 80]
 
-      let slider1 = document.getElementById<HTMLElement>('slider1')
-      let slider2 = document.getElementById<HTMLElement>('slider2')
+      const slider1 = document.getElementById<HTMLElement>('slider1')
+      const slider2 = document.getElementById<HTMLElement>('slider2')
 
-      let lockButton = document.getElementById<HTMLElement>('lockbutton')
-      let slider1Value = document.getElementById<HTMLElement>('slider1-span')
-      let slider2Value = document.getElementById<HTMLElement>('slider2-span')
+      const lockButton = document.getElementById<HTMLElement>('lockbutton')
+      const slider1Value = document.getElementById<HTMLElement>('slider1-span')
+      const slider2Value = document.getElementById<HTMLElement>('slider2-span')
 
       // When the button is clicked, the locked state is inverted.
       if (lockButton)
@@ -263,10 +263,10 @@ export default {
 
         // Select whether to increase or decrease
         // the other slider value.
-        let a = slider1 === slider ? 0 : 1
+        const a = slider1 === slider ? 0 : 1
 
         // Invert a
-        let b = a ? 0 : 1
+        const b = a ? 0 : 1
 
         // Offset the slider value.
         value -= lockedValues[b] - lockedValues[a]
@@ -322,7 +322,7 @@ export default {
       })
     },
     hidingTooltipSlider() {
-      let hidingTooltipSlider = document.getElementById('slider-hide')
+      const hidingTooltipSlider = document.getElementById('slider-hide')
 
       if (hidingTooltipSlider)
         noUiSlider.create(hidingTooltipSlider, {
@@ -335,7 +335,7 @@ export default {
         })
     },
     coloredConnected() {
-      let slider = document.getElementById('slider-color')
+      const slider = document.getElementById('slider-color')
 
       if (slider) {
         noUiSlider.create(slider, {
@@ -347,8 +347,8 @@ export default {
           },
         })
 
-        let connect = slider.querySelectorAll('.noUi-connect')
-        let classes = ['c-1-color', 'c-2-color', 'c-3-color', 'c-4-color', 'c-5-color']
+        const connect = slider.querySelectorAll('.noUi-connect')
+        const classes = ['c-1-color', 'c-2-color', 'c-3-color', 'c-4-color', 'c-5-color']
 
         for (let i = 0; i < connect.length; i++) {
           connect[i].classList.add(classes[i])
@@ -356,7 +356,7 @@ export default {
       }
     },
     toggleSlider() {
-      let toggleSlider = document.getElementById('slider-toggle')
+      const toggleSlider = document.getElementById('slider-toggle')
 
       if (toggleSlider) {
         noUiSlider.create(toggleSlider, {
@@ -381,7 +381,7 @@ export default {
       }
     },
     softLimits() {
-      let softSlider = document.getElementById('soft')
+      const softSlider = document.getElementById('soft')
       if (softSlider) {
         noUiSlider.create(softSlider, {
           start: 50,

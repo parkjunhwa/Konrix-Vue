@@ -607,7 +607,7 @@ export default {
   components: { Layout, Breadcrumb },
 
   mounted() {
-    let element = document.getElementById('gallery-wrapper')
+    const element = document.getElementById('gallery-wrapper')
     let shuffle
 
     if (element) {
@@ -659,7 +659,7 @@ export default {
       }
     }
 
-    let lightbox = GLightbox({
+    const lightbox = GLightbox({
       selector: '.image-popup',
       title: false,
     })

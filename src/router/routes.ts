@@ -493,35 +493,6 @@ const iconsRoutes = [
   },
 ]
 
-const chartRoutes = [
-  {
-    path: '/charts',
-    name: 'Charts',
-    meta: { authRequired: true },
-    component: () => import('@/views/charts/index.vue'),
-  },
-]
-
-const mapRoutes = [
-  {
-    path: '/maps',
-    name: 'Maps',
-    meta: { authRequired: true },
-    children: [
-      {
-        path: 'vector-maps',
-        name: 'Vector Maps',
-        component: () => import('@/views/maps/vector-maps/index.vue'),
-      },
-      {
-        path: 'google-maps',
-        name: 'Google Maps',
-        component: () => import('@/views/maps/google-maps/index.vue'),
-      },
-    ],
-  },
-]
-
 export const authProtectedRoutes = [
   ...dashboardRoutes,
   ...appsRoutes,
@@ -532,8 +503,6 @@ export const authProtectedRoutes = [
   ...formRoutes,
   ...tableRoutes,
   ...iconsRoutes,
-  ...chartRoutes,
-  ...mapRoutes,
 ]
 
 export const allRoutes = [...docsRoutes, ...authRoutes, ...errorPageRoutes, ...authProtectedRoutes]

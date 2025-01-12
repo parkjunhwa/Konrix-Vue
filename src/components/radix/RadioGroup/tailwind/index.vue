@@ -22,12 +22,7 @@ const radioStateSingle = ref('default')
           class="flex items-center justify-center w-full h-full relative after:content-[''] after:block after:w-[11px] after:h-[11px] after:rounded-[50%] after:bg-grass11"
         />
       </RadioGroupItem>
-      <label
-        class="text-white text-[15px] leading-none pl-[15px]"
-        for="r1"
-      >
-        Default
-      </label>
+      <label class="text-white text-[15px] leading-none pl-[15px]" for="r1"> Default </label>
     </div>
     <div class="flex items-center">
       <RadioGroupItem
@@ -39,12 +34,7 @@ const radioStateSingle = ref('default')
           class="flex items-center justify-center w-full h-full relative after:content-[''] after:block after:w-[11px] after:h-[11px] after:rounded-[50%] after:bg-grass11"
         />
       </RadioGroupItem>
-      <label
-        class="text-white text-[15px] leading-none pl-[15px]"
-        for="r2"
-      >
-        Comfortable
-      </label>
+      <label class="text-white text-[15px] leading-none pl-[15px]" for="r2"> Comfortable </label>
     </div>
     <div class="flex items-center">
       <RadioGroupItem
@@ -56,12 +46,7 @@ const radioStateSingle = ref('default')
           class="flex items-center justify-center w-full h-full relative after:content-[''] after:block after:w-[11px] after:h-[11px] after:rounded-[50%] after:bg-grass11"
         />
       </RadioGroupItem>
-      <label
-        class="text-white text-[15px] leading-none pl-[15px]"
-        for="r3"
-      >
-        Compact
-      </label>
+      <label class="text-white text-[15px] leading-none pl-[15px]" for="r3"> Compact </label>
     </div>
   </RadioGroupRoot>
 </template>

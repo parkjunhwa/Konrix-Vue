@@ -80,7 +80,7 @@ export default {
       })
 
     // rater-message
-    var messageDataService = {
+    const messageDataService = {
       rate: function (rating) {
         return {
           then: function (callback) {

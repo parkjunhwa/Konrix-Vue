@@ -27,27 +27,19 @@ const vegetables = ['Aubergine', 'Broccoli', 'Carrot', 'Courgette', 'Leek']
 
 <template>
   <SelectRoot v-model="fruit">
-    <SelectTrigger
-      class="SelectTrigger"
-      aria-label="Customise options"
-    >
+    <SelectTrigger class="SelectTrigger" aria-label="Customise options">
       <SelectValue placeholder="Select a fruit..." />
       <Icon icon="radix-icons:chevron-down" />
     </SelectTrigger>
 
     <SelectPortal>
-      <SelectContent
-        class="SelectContent"
-        :side-offset="5"
-      >
+      <SelectContent class="SelectContent" :side-offset="5">
         <SelectScrollUpButton class="SelectScrollButton">
           <Icon icon="radix-icons:chevron-up" />
         </SelectScrollUpButton>
 
         <SelectViewport class="SelectViewport">
-          <SelectLabel class="SelectLabel">
-            Fruits
-          </SelectLabel>
+          <SelectLabel class="SelectLabel"> Fruits </SelectLabel>
           <SelectGroup>
             <SelectItem
               v-for="(option, index) in options"
@@ -64,9 +56,7 @@ const vegetables = ['Aubergine', 'Broccoli', 'Carrot', 'Courgette', 'Leek']
             </SelectItem>
           </SelectGroup>
           <SelectSeparator class="SelectSeparator" />
-          <SelectLabel class="SelectLabel">
-            Vegetables
-          </SelectLabel>
+          <SelectLabel class="SelectLabel"> Vegetables </SelectLabel>
           <SelectGroup>
             <SelectItem
               v-for="(option, index) in vegetables"

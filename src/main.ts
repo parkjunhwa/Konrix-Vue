@@ -4,8 +4,6 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
-
-
 // import VueApexCharts from 'vue3-apexcharts'
 import 'simplebar'
 // import 'jsvectormap'
@@ -14,13 +12,11 @@ import 'simplebar'
 import VueSweetalert2 from 'vue-sweetalert2'
 // import VueTheMask from "vue-the-mask";
 
-
 import jQuery from 'jquery'
 window.$ = window.jQuery = jQuery
 
 import moment from 'moment'
 window.moment = moment
-
 
 import 'preline'
 import 'simplebar-vue/dist/simplebar.min.css'
@@ -28,7 +24,7 @@ import 'simplebar-vue/dist/simplebar.min.css'
 // import 'jsvectormap/dist/css/jsvectormap.min.css'
 import 'prismjs/themes/prism.css'
 import 'glightbox/dist/css/glightbox.min.css'
-import 'swiper/css';
+import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'

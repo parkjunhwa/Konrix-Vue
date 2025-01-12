@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import { AccordionContent, AccordionHeader, AccordionItem, AccordionRoot, AccordionTrigger } from 'radix-vue'
+import {
+  AccordionContent,
+  AccordionHeader,
+  AccordionItem,
+  AccordionRoot,
+  AccordionTrigger,
+} from 'radix-vue'
 import { Icon } from '@iconify/vue'
 import './styles.css'
 
@@ -12,7 +18,7 @@ const accordionItems = [
   {
     value: 'item-2',
     title: 'Is it unstyled?',
-    content: 'Yes. It\'s unstyled by default, giving you freedom over the look and feel.',
+    content: "Yes. It's unstyled by default, giving you freedom over the look and feel.",
   },
   {
     value: 'item-3',
@@ -23,20 +29,9 @@ const accordionItems = [
 </script>
 
 <template>
-  <AccordionRoot
-    class="AccordionRoot"
-    default-value="'item-1'"
-    type="single"
-    :collapsible="true"
-  >
-    <template
-      v-for="item in accordionItems"
-      :key="item.value"
-    >
-      <AccordionItem
-        class="AccordionItem"
-        :value="item.value"
-      >
+  <AccordionRoot class="AccordionRoot" default-value="'item-1'" type="single" :collapsible="true">
+    <template v-for="item in accordionItems" :key="item.value">
+      <AccordionItem class="AccordionItem" :value="item.value">
         <AccordionHeader class="AccordionHeader">
           <AccordionTrigger class="AccordionTrigger">
             <span>{{ item.title }}</span>

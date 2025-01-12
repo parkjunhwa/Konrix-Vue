@@ -6,34 +6,13 @@
         <i class="mgc_menu_line text-xl"></i>
       </span>
     </button>
-
-    <a href="/" class="logo-box">
-      <div class="logo-light">
-        <img src="@/assets/images/logo-light.png" class="logo-lg h-6" alt="Light logo" />
-        <img src="@/assets/images/logo-sm.png" class="logo-sm" alt="Small logo" />
-      </div>
-
-      <div class="logo-dark">
-        <img src="@/assets/images/logo-dark.png" class="logo-lg h-6" alt="Dark logo" />
-        <img src="@/assets/images/logo-sm.png" class="logo-sm" alt="Small logo" />
-      </div>
-    </a>
-
-    <button type="button" data-hs-overlay="#topbar-search-modal" class="nav-link p-2 me-auto">
-      <span class="sr-only">Search</span>
-      <span class="flex items-center justify-center h-6 w-6">
-        <i class="mgc_search_line text-2xl"></i>
-      </span>
-    </button>
-
-    <!-- <div class="md:flex hidden">
-      <button data-toggle="fullscreen" type="button" class="nav-link p-2">
-        <span class="sr-only">Fullscreen Mode</span>
-        <span class="flex items-center justify-center h-6 w-6">
-          <i class="mgc_fullscreen_line text-2xl"></i>
-        </span>
-      </button>
-    </div> -->
+    <div class="flex me-auto">
+      <a href="/" class="logo-box">
+        <div class="logo-dark">
+          <img src="@/assets/images/logo-dark.png" class="h-6" alt="Dark logo" />
+        </div>
+      </a>
+    </div>
 
     <div class="hs-dropdown relative inline-flex md:flex">
       <button type="button" class="hs-dropdown-toggle nav-link p-2">
@@ -232,35 +211,6 @@
       </div>
     </div>
   </header>
-
-  <!-- Topbar Search Modal -->
-  <div>
-    <div
-      id="topbar-search-modal"
-      class="hs-overlay hidden w-full h-full fixed top-0 start-0 z-[60]"
-    >
-      <div
-        class="hs-overlay-open:opacity-100 hs-overlay-open:duration-500 opacity-0 transition-all sm:max-w-lg sm:w-full m-12 sm:mx-auto"
-      >
-        <div
-          class="mx-auto max-w-2xl overflow-hidden rounded-xl bg-white shadow-2xl transition-all dark:bg-slate-800"
-        >
-          <div class="relative">
-            <div
-              class="pointer-events-none absolute top-3.5 start-4 text-gray-900 text-opacity-40 dark:text-gray-200"
-            >
-              <i class="mgc_search_line text-xl"></i>
-            </div>
-            <input
-              type="search"
-              class="h-12 w-full border-0 bg-transparent ps-11 pe-4 text-gray-900 placeholder-gray-500 dark:placeholder-gray-300 dark:text-gray-200 focus:ring-0 sm:text-sm"
-              placeholder="Search..."
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script lang="ts">

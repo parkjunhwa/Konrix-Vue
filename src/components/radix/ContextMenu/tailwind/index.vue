@@ -23,7 +23,7 @@ const checkboxTwo = ref(false)
 const person = ref('pedro')
 
 function handleClick() {
-  // eslint-disable-next-line no-alert
+   
   alert('hello!')
 }
 </script>
@@ -46,7 +46,8 @@ function handleClick() {
           class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
           @click="handleClick"
         >
-          New Tab <div
+          New Tab
+          <div
             class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
           >
             ⌘+T
@@ -57,7 +58,8 @@ function handleClick() {
             value="more toolsz"
             class="group w-full text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:bg-green9 data-[highlighted]:data-[state=open]:text-green1"
           >
-            More Tools <div
+            More Tools
+            <div
               class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
             >
               <Icon icon="radix-icons:chevron-right" />
@@ -72,7 +74,8 @@ function handleClick() {
               <ContextMenuItem
                 class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
               >
-                Save Page As… <div
+                Save Page As…
+                <div
                   class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
                 >
                   ⌘+S
@@ -101,7 +104,8 @@ function handleClick() {
           value="New Window"
           class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
         >
-          New Window <div
+          New Window
+          <div
             class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
           >
             ⌘+N
@@ -112,7 +116,8 @@ function handleClick() {
           class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
           disabled
         >
-          New Private Window <div
+          New Private Window
+          <div
             class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
           >
             ⇧+⌘+N
@@ -123,7 +128,8 @@ function handleClick() {
             value="more tools"
             class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none w-full outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:bg-green9 data-[highlighted]:data-[state=open]:text-green1"
           >
-            More Tools <div
+            More Tools
+            <div
               class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
             >
               <Icon icon="radix-icons:chevron-right" />
@@ -138,7 +144,8 @@ function handleClick() {
               <ContextMenuItem
                 class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
               >
-                Save Page As… <div
+                Save Page As…
+                <div
                   class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
                 >
                   ⌘+S
@@ -165,7 +172,8 @@ function handleClick() {
                   value="more toolsz"
                   class="group w-full text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:bg-green9 data-[highlighted]:data-[state=open]:text-green1"
                 >
-                  More Tools <div
+                  More Tools
+                  <div
                     class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
                   >
                     <Icon icon="radix-icons:chevron-right" />
@@ -180,7 +188,8 @@ function handleClick() {
                     <ContextMenuItem
                       class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
                     >
-                      Save Page As… <div
+                      Save Page As…
+                      <div
                         class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
                       >
                         ⌘+S
@@ -207,7 +216,8 @@ function handleClick() {
                         value="more toolsz"
                         class="group w-full text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[state=open]:bg-green4 data-[state=open]:text-grass11 data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1 data-[highlighted]:data-[state=open]:bg-green9 data-[highlighted]:data-[state=open]:text-green1"
                       >
-                        More Tools <div
+                        More Tools
+                        <div
                           class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
                         >
                           <Icon icon="radix-icons:chevron-right" />
@@ -222,7 +232,8 @@ function handleClick() {
                           <ContextMenuItem
                             class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
                           >
-                            Save Page As… <div
+                            Save Page As…
+                            <div
                               class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
                             >
                               ⌘+S
@@ -263,9 +274,13 @@ function handleClick() {
           v-model="checkboxOne"
           class="group text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
         >
-          <ContextMenuItemIndicator class="absolute left-0 w-[25px] inline-flex items-center justify-center">
+          <ContextMenuItemIndicator
+            class="absolute left-0 w-[25px] inline-flex items-center justify-center"
+          >
             <Icon icon="radix-icons:check" />
-          </ContextMenuItemIndicator> Show Bookmarks <div
+          </ContextMenuItemIndicator>
+          Show Bookmarks
+          <div
             class="ml-auto pl-[20px] text-mauve11 group-data-[highlighted]:text-white group-data-[disabled]:text-mauve8"
           >
             ⌘+B
@@ -275,9 +290,12 @@ function handleClick() {
           v-model="checkboxTwo"
           class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
         >
-          <ContextMenuItemIndicator class="absolute left-0 w-[25px] inline-flex items-center justify-center">
+          <ContextMenuItemIndicator
+            class="absolute left-0 w-[25px] inline-flex items-center justify-center"
+          >
             <Icon icon="radix-icons:check" />
-          </ContextMenuItemIndicator> Show Full URLs
+          </ContextMenuItemIndicator>
+          Show Full URLs
         </ContextMenuCheckboxItem>
         <ContextMenuSeparator class="h-[1px] bg-green6 m-[5px]" />
         <ContextMenuLabel class="pl-[25px] text-xs leading-[25px] text-mauve11">
@@ -288,17 +306,23 @@ function handleClick() {
             class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
             value="pedro"
           >
-            <ContextMenuItemIndicator class="absolute left-0 w-[25px] inline-flex items-center justify-center">
+            <ContextMenuItemIndicator
+              class="absolute left-0 w-[25px] inline-flex items-center justify-center"
+            >
               <Icon icon="radix-icons:dot-filled" />
-            </ContextMenuItemIndicator> Pedro Duarte
+            </ContextMenuItemIndicator>
+            Pedro Duarte
           </ContextMenuRadioItem>
           <ContextMenuRadioItem
             class="text-[13px] leading-none text-grass11 rounded-[3px] flex items-center h-[25px] px-[5px] relative pl-[25px] select-none outline-none data-[disabled]:text-mauve8 data-[disabled]:pointer-events-none data-[highlighted]:bg-green9 data-[highlighted]:text-green1"
             value="colm"
           >
-            <ContextMenuItemIndicator class="absolute left-0 w-[25px] inline-flex items-center justify-center">
+            <ContextMenuItemIndicator
+              class="absolute left-0 w-[25px] inline-flex items-center justify-center"
+            >
               <Icon icon="radix-icons:dot-filled" />
-            </ContextMenuItemIndicator> Colm Tuite
+            </ContextMenuItemIndicator>
+            Colm Tuite
           </ContextMenuRadioItem>
         </ContextMenuRadioGroup>
       </ContextMenuContent>

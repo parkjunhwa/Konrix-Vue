@@ -7,10 +7,11 @@
   width: $sidenav-width;
   min-width: $sidenav-width;
   background: $menu-bg;
-  @apply sticky top-0 h-screen z-40 shadow transition-all duration-300;
+  @apply sticky top-0 h-screen shadow transition-all duration-300;
+  height: 100vh;
 
   .srcollbar {
-    height: calc(100% - $topbar-height);
+    height: 100vh;
     @apply border-t border-dashed border-gray-500/25;
   }
 }
@@ -177,12 +178,6 @@ html[data-menu-color='gradient'] {
 
 .help-box {
   color: $menu-item-color;
-}
-
-// Sidenav Hover Button
-#button-hover-toggle {
-  color: $menu-item-color;
-  @apply hidden items-center justify-center;
 }
 
 // Small Hover
@@ -490,7 +485,7 @@ html[data-sidenav-view='md'] {
   }
 }
 
-// Mobile View Sidenav (Mobile Sidebar || Open Sidenav with Backdrop)
+// Mobile View Sidenav (Mobile Sidebar || Open Sidenav with )
 html[data-sidenav-view='mobile'] {
   .app-menu {
     margin-inline-start: calc($sidenav-width * -1);
@@ -500,7 +495,7 @@ html[data-sidenav-view='mobile'] {
   &.sidenav-enable {
     .app-menu {
       margin-inline-start: 0;
-      @apply opacity-100 z-50;
+      @apply opacity-100 z-10;
     }
   }
 }

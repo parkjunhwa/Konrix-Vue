@@ -140,7 +140,7 @@ export default {
       })
     },
     sweetalertParams() {
-      let swal = this.$swal
+      const swal = this.$swal
 
       swal
         .fire({

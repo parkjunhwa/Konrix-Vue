@@ -9,13 +9,14 @@
 
   <!-- Theme Settings -->
   <div>
-    <div class="fixed end-0 bottom-20">
+    <div class="fixed end-0 bottom-20 z-10">
       <button
         data-fc-type="offcanvas"
         data-fc-target="theme-customization"
         type="button"
         class="bg-white rounded-s-full shadow-lg p-2.5 ps-3 transition-all dark:bg-slate-800"
         @click="handleCustomizer"
+
       >
         <span class="sr-only">Setting</span>
         <span class="flex items-center justify-center animate-spin">

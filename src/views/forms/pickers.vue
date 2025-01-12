@@ -420,64 +420,64 @@ export default {
   },
   methods: {
     classicColorPicker() {
-      let classicPickrDemo = document.querySelectorAll<HTMLElement>('.classic-colorpicker')
-      let self = this
+      const classicPickrDemo = document.querySelectorAll<HTMLElement>('.classic-colorpicker')
+      const self = this
       if (classicPickrDemo)
         classicPickrDemo.forEach(function () {
           const pickr = Pickr.create(self.classicColorPickerOptions)
         })
     },
     monolithColorPicker() {
-      let monolithColorPickr = document.querySelectorAll('.monolith-colorpicker')
-      let self = this
+      const monolithColorPickr = document.querySelectorAll('.monolith-colorpicker')
+      const self = this
       if (monolithColorPickr)
         monolithColorPickr.forEach(function () {
           Pickr.create(self.monolithColorPickerOptions)
         })
     },
     nanoColorPicker() {
-      let nanoColorPickr = document.querySelectorAll('.nano-colorpicker')
-      let self = this
+      const nanoColorPickr = document.querySelectorAll('.nano-colorpicker')
+      const self = this
       if (nanoColorPickr)
         nanoColorPickr.forEach(function () {
           Pickr.create(self.nanoColorPickerOptions)
         })
     },
     demoColorPicker() {
-      let demoColorPickr = document.querySelectorAll('.colorpicker-demo')
-      let self = this
+      const demoColorPickr = document.querySelectorAll('.colorpicker-demo')
+      const self = this
       if (demoColorPickr)
         demoColorPickr.forEach(function () {
           Pickr.create(self.demoColorPickerOptions)
         })
     },
     opacityAndHueColorPicker() {
-      let opacityHueColorPickr = document.querySelectorAll('.colorpicker-opacity-hue')
-      let self = this
+      const opacityHueColorPickr = document.querySelectorAll('.colorpicker-opacity-hue')
+      const self = this
       if (opacityHueColorPickr)
         opacityHueColorPickr.forEach(function () {
           Pickr.create(self.opacityAndHueColorPickerOptions)
         })
     },
     switchColorPicker() {
-      let swatcherColorPickr = document.querySelectorAll('.colorpicker-switch')
-      let self = this
+      const swatcherColorPickr = document.querySelectorAll('.colorpicker-switch')
+      const self = this
       if (swatcherColorPickr)
         swatcherColorPickr.forEach(function () {
           Pickr.create(self.switchColorPickerOptions)
         })
     },
     inputColorPicker() {
-      let inputColorPickr = document.querySelectorAll('.colorpicker-input')
-      let self = this
+      const inputColorPickr = document.querySelectorAll('.colorpicker-input')
+      const self = this
       if (inputColorPickr)
         inputColorPickr.forEach(function () {
           Pickr.create(self.inputColorPickerOptions)
         })
     },
     formatColorPicker() {
-      let formatColorPickr = document.querySelectorAll('.colorpicker-format')
-      let self = this
+      const formatColorPickr = document.querySelectorAll('.colorpicker-format')
+      const self = this
       if (formatColorPickr)
         formatColorPickr.forEach(function () {
           Pickr.create(self.formatColorPickerOptions)

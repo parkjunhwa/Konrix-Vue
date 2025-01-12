@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { HoverCardArrow, HoverCardContent, HoverCardPortal, HoverCardRoot, HoverCardTrigger } from 'radix-vue'
+import {
+  HoverCardArrow,
+  HoverCardContent,
+  HoverCardPortal,
+  HoverCardRoot,
+  HoverCardTrigger,
+} from 'radix-vue'
 
 const hoverState = ref(false)
 </script>
@@ -17,7 +23,7 @@ const hoverState = ref(false)
         class="block h-[45px] w-[45px] rounded-full"
         src="https://pbs.twimg.com/profile_images/1337055608613253126/r_eiMp2H_400x400.png"
         alt="Radix UI"
-      >
+      />
     </HoverCardTrigger>
     <HoverCardPortal>
       <HoverCardContent
@@ -29,44 +35,30 @@ const hoverState = ref(false)
             class="block h-[60px] w-[60px] rounded-full"
             src="https://pbs.twimg.com/profile_images/1337055608613253126/r_eiMp2H_400x400.png"
             alt="Radix UI"
-          >
+          />
           <div class="flex flex-col gap-[15px]">
             <div>
-              <div class="text-mauve12 m-0 text-[15px] font-medium leading-[1.5]">
-                Radix
-              </div>
-              <div class="text-mauve10 m-0 text-[15px] leading-[1.5]">
-                @radix_ui
-              </div>
+              <div class="text-mauve12 m-0 text-[15px] font-medium leading-[1.5]">Radix</div>
+              <div class="text-mauve10 m-0 text-[15px] leading-[1.5]">@radix_ui</div>
             </div>
             <div class="text-mauve12 m-0 text-[15px] leading-[1.5]">
-              Components, icons, colors, and templates for building high-quality, accessible UI. Free and open-source.
+              Components, icons, colors, and templates for building high-quality, accessible UI.
+              Free and open-source.
             </div>
             <div class="flex gap-[15px]">
               <div class="flex gap-[5px]">
-                <div class="text-mauve12 m-0 text-[15px] font-medium leading-[1.5]">
-                  0
-                </div>
-                <div class="text-mauve10 m-0 text-[15px] leading-[1.5]">
-                  Following
-                </div>
+                <div class="text-mauve12 m-0 text-[15px] font-medium leading-[1.5]">0</div>
+                <div class="text-mauve10 m-0 text-[15px] leading-[1.5]">Following</div>
               </div>
               <div class="flex gap-[5px]">
-                <div class="text-mauve12 m-0 text-[15px] font-medium leading-[1.5]">
-                  2,900
-                </div>
-                <div class="text-mauve10 m-0 text-[15px] leading-[1.5]">
-                  Followers
-                </div>
+                <div class="text-mauve12 m-0 text-[15px] font-medium leading-[1.5]">2,900</div>
+                <div class="text-mauve10 m-0 text-[15px] leading-[1.5]">Followers</div>
               </div>
             </div>
           </div>
         </div>
 
-        <HoverCardArrow
-          class="fill-white"
-          :width="8"
-        />
+        <HoverCardArrow class="fill-white" :width="8" />
       </HoverCardContent>
     </HoverCardPortal>
   </HoverCardRoot>

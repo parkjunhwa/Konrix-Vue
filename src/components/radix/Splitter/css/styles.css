@@ -11,12 +11,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-} 
-
-.SplitterResizeHandle[data-orientation="horizontal"] {
-  width: 0.5rem
 }
 
-.SplitterResizeHandle[data-orientation="vertical"] {
-  height: 0.5rem
+.SplitterResizeHandle[data-orientation='horizontal'] {
+  width: 0.5rem;
+}
+
+.SplitterResizeHandle[data-orientation='vertical'] {
+  height: 0.5rem;
 }

@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { ToastAction, ToastDescription, ToastProvider, ToastRoot, ToastTitle, ToastViewport } from 'radix-vue'
+import {
+  ToastAction,
+  ToastDescription,
+  ToastProvider,
+  ToastRoot,
+  ToastTitle,
+  ToastViewport,
+} from 'radix-vue'
 import './styles.css'
 
 const open = ref(false)
@@ -29,36 +36,17 @@ function handleClick() {
 
 <template>
   <ToastProvider>
-    <button
-      class="Button large grass"
-      @click="handleClick"
-    >
-      Add to calendar
-    </button>
+    <button class="Button large grass" @click="handleClick">Add to calendar</button>
 
-    <ToastRoot
-      v-model:open="open"
-      class="ToastRoot"
-    >
-      <ToastTitle class="ToastTitle">
-        Scheduled: Catch up
-      </ToastTitle>
+    <ToastRoot v-model:open="open" class="ToastRoot">
+      <ToastTitle class="ToastTitle"> Scheduled: Catch up </ToastTitle>
       <ToastDescription as-child>
-        <time
-          class="ToastDescription"
-          :dateTime="eventDateRef.toISOString()"
-        >
+        <time class="ToastDescription" :dateTime="eventDateRef.toISOString()">
           {{ prettyDate(eventDateRef) }}
         </time>
       </ToastDescription>
-      <ToastAction
-        class="ToastAction"
-        as-child
-        alt-text="Goto schedule to undo"
-      >
-        <button class="Button small green">
-          Undo
-        </button>
+      <ToastAction class="ToastAction" as-child alt-text="Goto schedule to undo">
+        <button class="Button small green">Undo</button>
       </ToastAction>
     </ToastRoot>
     <ToastViewport class="ToastViewport" />

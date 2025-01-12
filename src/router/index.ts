@@ -23,7 +23,7 @@ router.beforeEach((routeTo, routeFrom, next) => {
   // If auth isn't required for the route, just continue.
   if (!authRequired) return next()
 
-  let useFakeAuth = useFakeAuthStore()
+  const useFakeAuth = useFakeAuthStore()
   // If auth is required and the user is logged in...
   if (useFakeAuth.isAuthenticated) {
     return next()

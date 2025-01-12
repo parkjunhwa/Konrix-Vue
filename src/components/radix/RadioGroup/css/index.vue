@@ -14,55 +14,22 @@ const radioStateSingle = ref('default')
     aria-label="View density"
   >
     <div :style="{ display: 'flex', alignItems: 'center' }">
-      <RadioGroupItem
-        id="r1"
-        class="RadioGroupItem"
-        value="default"
-      >
-        <RadioGroupIndicator
-          class="RadioGroupIndicator"
-        />
+      <RadioGroupItem id="r1" class="RadioGroupItem" value="default">
+        <RadioGroupIndicator class="RadioGroupIndicator" />
       </RadioGroupItem>
-      <label
-        class="Label"
-        for="r1"
-      >
-        Default
-      </label>
+      <label class="Label" for="r1"> Default </label>
     </div>
     <div :style="{ display: 'flex', alignItems: 'center' }">
-      <RadioGroupItem
-        id="r2"
-        class="RadioGroupItem"
-        value="comfortable"
-      >
-        <RadioGroupIndicator
-          class="RadioGroupIndicator"
-        />
+      <RadioGroupItem id="r2" class="RadioGroupItem" value="comfortable">
+        <RadioGroupIndicator class="RadioGroupIndicator" />
       </RadioGroupItem>
-      <label
-        class="Label"
-        for="r2"
-      >
-        Comfortable
-      </label>
+      <label class="Label" for="r2"> Comfortable </label>
     </div>
     <div :style="{ display: 'flex', alignItems: 'center' }">
-      <RadioGroupItem
-        id="r3"
-        class="RadioGroupItem"
-        value="compact"
-      >
-        <RadioGroupIndicator
-          class="RadioGroupIndicator"
-        />
+      <RadioGroupItem id="r3" class="RadioGroupItem" value="compact">
+        <RadioGroupIndicator class="RadioGroupIndicator" />
       </RadioGroupItem>
-      <label
-        class="Label"
-        for="r3"
-      >
-        Compact
-      </label>
+      <label class="Label" for="r3"> Compact </label>
     </div>
   </RadioGroupRoot>
 </template>

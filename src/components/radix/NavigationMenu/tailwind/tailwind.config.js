@@ -61,7 +61,7 @@ module.exports = {
   plugins: [
     plugin(({ matchUtilities }) => {
       matchUtilities({
-        perspective: value => ({
+        perspective: (value) => ({
           perspective: value,
         }),
       })

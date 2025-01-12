@@ -63,3 +63,13 @@
 div[data-radix-popper-content-wrapper] {
   z-index: 6;
 }
+
+.content-area {
+  height: calc(100vh - 70px);
+  top: 70px;
+  @apply sticky;
+}
+.app-menu {z-index: 2;}
+.page-content {z-index: 1;}
+
+html[data-sidenav-view=mobile].sidenav-enable .app-menu {z-index: 50;}

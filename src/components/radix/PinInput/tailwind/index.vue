@@ -4,17 +4,14 @@ import { Label, PinInputInput, PinInputRoot } from 'radix-vue'
 
 const value = ref<string[]>([])
 function handleComplete(e: string[]) {
-  // eslint-disable-next-line no-alert
+   
   alert(e.join(''))
 }
 </script>
 
 <template>
   <div>
-    <Label
-      for="pin-input"
-      class="text-white"
-    >Pin Input</Label>
+    <Label for="pin-input" class="text-white">Pin Input</Label>
     <PinInputRoot
       id="pin-input"
       v-model="value"

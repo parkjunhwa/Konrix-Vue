@@ -24,43 +24,26 @@ const checkboxTwo = ref(false)
 const person = ref('pedro')
 
 function handleClick() {
-  // eslint-disable-next-line no-alert
+   
   alert('hello!')
 }
 </script>
 
 <template>
   <ContextMenuRoot>
-    <ContextMenuTrigger
-      as-child
-      class="ContextMenuTrigger"
-    >
+    <ContextMenuTrigger as-child class="ContextMenuTrigger">
       <span> Right click here. </span>
     </ContextMenuTrigger>
     <ContextMenuPortal>
-      <ContextMenuContent
-        class="ContextMenuContent"
-        :side-offset="5"
-      >
-        <ContextMenuItem
-          value="New Tab"
-          class="ContextMenuItem"
-          @click="handleClick"
-        >
-          New Tab <div
-            class="RightSlot"
-          >
-            ⌘+T
-          </div>
+      <ContextMenuContent class="ContextMenuContent" :side-offset="5">
+        <ContextMenuItem value="New Tab" class="ContextMenuItem" @click="handleClick">
+          New Tab
+          <div class="RightSlot">⌘+T</div>
         </ContextMenuItem>
         <ContextMenuSub>
-          <ContextMenuSubTrigger
-            value="more toolsz"
-            class="ContextMenuSubTrigger"
-          >
-            More Tools <div
-              class="RightSlot"
-            >
+          <ContextMenuSubTrigger value="more toolsz" class="ContextMenuSubTrigger">
+            More Tools
+            <div class="RightSlot">
               <Icon icon="radix-icons:chevron-right" />
             </div>
           </ContextMenuSubTrigger>
@@ -70,63 +53,29 @@ function handleClick() {
               :side-offset="2"
               :align-offset="-5"
             >
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Save Page As… <div
-                  class="RightSlot"
-                >
-                  ⌘+S
-                </div>
+              <ContextMenuItem class="ContextMenuItem">
+                Save Page As…
+                <div class="RightSlot">⌘+S</div>
               </ContextMenuItem>
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Create Shortcut…
-              </ContextMenuItem>
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Name Window…
-              </ContextMenuItem>
+              <ContextMenuItem class="ContextMenuItem"> Create Shortcut… </ContextMenuItem>
+              <ContextMenuItem class="ContextMenuItem"> Name Window… </ContextMenuItem>
               <ContextMenuSeparator class="ContextMenuSeparator" />
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Developer Tools
-              </ContextMenuItem>
+              <ContextMenuItem class="ContextMenuItem"> Developer Tools </ContextMenuItem>
             </ContextMenuSubContent>
           </ContextMenuPortal>
         </ContextMenuSub>
-        <ContextMenuItem
-          value="New Window"
-          class="ContextMenuItem"
-        >
-          New Window <div
-            class="RightSlot"
-          >
-            ⌘+N
-          </div>
+        <ContextMenuItem value="New Window" class="ContextMenuItem">
+          New Window
+          <div class="RightSlot">⌘+N</div>
         </ContextMenuItem>
-        <ContextMenuItem
-          value="New Private Window"
-          class="ContextMenuItem"
-          disabled
-        >
-          New Private Window <div
-            class="RightSlot"
-          >
-            ⇧+⌘+N
-          </div>
+        <ContextMenuItem value="New Private Window" class="ContextMenuItem" disabled>
+          New Private Window
+          <div class="RightSlot">⇧+⌘+N</div>
         </ContextMenuItem>
         <ContextMenuSub>
-          <ContextMenuSubTrigger
-            value="more tools"
-            class="ContextMenuSubTrigger"
-          >
-            More Tools <div
-              class="RightSlot"
-            >
+          <ContextMenuSubTrigger value="more tools" class="ContextMenuSubTrigger">
+            More Tools
+            <div class="RightSlot">
               <Icon icon="radix-icons:chevron-right" />
             </div>
           </ContextMenuSubTrigger>
@@ -136,39 +85,18 @@ function handleClick() {
               :side-offset="2"
               :align-offset="-5"
             >
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Save Page As… <div
-                  class="RightSlot"
-                >
-                  ⌘+S
-                </div>
+              <ContextMenuItem class="ContextMenuItem">
+                Save Page As…
+                <div class="RightSlot">⌘+S</div>
               </ContextMenuItem>
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Create Shortcut…
-              </ContextMenuItem>
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Name Window…
-              </ContextMenuItem>
+              <ContextMenuItem class="ContextMenuItem"> Create Shortcut… </ContextMenuItem>
+              <ContextMenuItem class="ContextMenuItem"> Name Window… </ContextMenuItem>
               <ContextMenuSeparator class="ContextMenuSeparator" />
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Developer Tools
-              </ContextMenuItem>
+              <ContextMenuItem class="ContextMenuItem"> Developer Tools </ContextMenuItem>
               <ContextMenuSub>
-                <ContextMenuSubTrigger
-                  value="more toolsz"
-                  class="ContextMenuSubTrigger"
-                >
-                  More Tools <div
-                    class="RightSlot"
-                  >
+                <ContextMenuSubTrigger value="more toolsz" class="ContextMenuSubTrigger">
+                  More Tools
+                  <div class="RightSlot">
                     <Icon icon="radix-icons:chevron-right" />
                   </div>
                 </ContextMenuSubTrigger>
@@ -178,39 +106,18 @@ function handleClick() {
                     :side-offset="2"
                     :align-offset="-5"
                   >
-                    <ContextMenuItem
-                      class="ContextMenuItem"
-                    >
-                      Save Page As… <div
-                        class="RightSlot"
-                      >
-                        ⌘+S
-                      </div>
+                    <ContextMenuItem class="ContextMenuItem">
+                      Save Page As…
+                      <div class="RightSlot">⌘+S</div>
                     </ContextMenuItem>
-                    <ContextMenuItem
-                      class="ContextMenuItem"
-                    >
-                      Create Shortcut…
-                    </ContextMenuItem>
-                    <ContextMenuItem
-                      class="ContextMenuItem"
-                    >
-                      Name Window…
-                    </ContextMenuItem>
+                    <ContextMenuItem class="ContextMenuItem"> Create Shortcut… </ContextMenuItem>
+                    <ContextMenuItem class="ContextMenuItem"> Name Window… </ContextMenuItem>
                     <ContextMenuSeparator class="ContextMenuSeparator" />
-                    <ContextMenuItem
-                      class="ContextMenuItem"
-                    >
-                      Developer Tools
-                    </ContextMenuItem>
+                    <ContextMenuItem class="ContextMenuItem"> Developer Tools </ContextMenuItem>
                     <ContextMenuSub>
-                      <ContextMenuSubTrigger
-                        value="more toolsz"
-                        class="ContextMenuSubTrigger"
-                      >
-                        More Tools <div
-                          class="RightSlot"
-                        >
+                      <ContextMenuSubTrigger value="more toolsz" class="ContextMenuSubTrigger">
+                        More Tools
+                        <div class="RightSlot">
                           <Icon icon="radix-icons:chevron-right" />
                         </div>
                       </ContextMenuSubTrigger>
@@ -220,29 +127,16 @@ function handleClick() {
                           :side-offset="2"
                           :align-offset="-5"
                         >
-                          <ContextMenuItem
-                            class="ContextMenuItem"
-                          >
-                            Save Page As… <div
-                              class="RightSlot"
-                            >
-                              ⌘+S
-                            </div>
+                          <ContextMenuItem class="ContextMenuItem">
+                            Save Page As…
+                            <div class="RightSlot">⌘+S</div>
                           </ContextMenuItem>
-                          <ContextMenuItem
-                            class="ContextMenuItem"
-                          >
+                          <ContextMenuItem class="ContextMenuItem">
                             Create Shortcut…
                           </ContextMenuItem>
-                          <ContextMenuItem
-                            class="ContextMenuItem"
-                          >
-                            Name Window…
-                          </ContextMenuItem>
+                          <ContextMenuItem class="ContextMenuItem"> Name Window… </ContextMenuItem>
                           <ContextMenuSeparator class="ContextMenuSeparator" />
-                          <ContextMenuItem
-                            class="ContextMenuItem"
-                          >
+                          <ContextMenuItem class="ContextMenuItem">
                             Developer Tools
                           </ContextMenuItem>
                         </ContextMenuSubContent>
@@ -251,55 +145,38 @@ function handleClick() {
                   </ContextMenuSubContent>
                 </ContextMenuPortal>
               </ContextMenuSub>
-              <ContextMenuItem
-                class="ContextMenuItem"
-              >
-                Developer Tools
-              </ContextMenuItem>
+              <ContextMenuItem class="ContextMenuItem"> Developer Tools </ContextMenuItem>
             </ContextMenuSubContent>
           </ContextMenuPortal>
         </ContextMenuSub>
         <ContextMenuSeparator class="ContextMenuSeparator" />
-        <ContextMenuCheckboxItem
-          v-model="checkboxOne"
-          class="ContextMenuItem"
-        >
+        <ContextMenuCheckboxItem v-model="checkboxOne" class="ContextMenuItem">
           <ContextMenuItemIndicator class="ContextMenuItemIndicator">
             <Icon icon="radix-icons:check" />
-          </ContextMenuItemIndicator> Show Bookmarks <div
-            class="RightSlot"
-          >
-            ⌘+B
-          </div>
+          </ContextMenuItemIndicator>
+          Show Bookmarks
+          <div class="RightSlot">⌘+B</div>
         </ContextMenuCheckboxItem>
-        <ContextMenuCheckboxItem
-          v-model="checkboxTwo"
-          class="ContextMenuItem"
-        >
+        <ContextMenuCheckboxItem v-model="checkboxTwo" class="ContextMenuItem">
           <ContextMenuItemIndicator class="ContextMenuItemIndicator">
             <Icon icon="radix-icons:check" />
-          </ContextMenuItemIndicator> Show Full URLs
+          </ContextMenuItemIndicator>
+          Show Full URLs
         </ContextMenuCheckboxItem>
         <ContextMenuSeparator class="ContextMenuSeparator" />
-        <ContextMenuLabel class="ContextMenuLabel">
-          People
-        </ContextMenuLabel>
+        <ContextMenuLabel class="ContextMenuLabel"> People </ContextMenuLabel>
         <ContextMenuRadioGroup v-model="person">
-          <ContextMenuRadioItem
-            class="ContextMenuItem"
-            value="pedro"
-          >
+          <ContextMenuRadioItem class="ContextMenuItem" value="pedro">
             <ContextMenuItemIndicator class="ContextMenuItemIndicator">
               <Icon icon="radix-icons:dot-filled" />
-            </ContextMenuItemIndicator> Pedro Duarte
+            </ContextMenuItemIndicator>
+            Pedro Duarte
           </ContextMenuRadioItem>
-          <ContextMenuRadioItem
-            class="ContextMenuItem"
-            value="colm"
-          >
+          <ContextMenuRadioItem class="ContextMenuItem" value="colm">
             <ContextMenuItemIndicator class="ContextMenuItemIndicator">
               <Icon icon="radix-icons:dot-filled" />
-            </ContextMenuItemIndicator> Colm Tuite
+            </ContextMenuItemIndicator>
+            Colm Tuite
           </ContextMenuRadioItem>
         </ContextMenuRadioGroup>
       </ContextMenuContent>

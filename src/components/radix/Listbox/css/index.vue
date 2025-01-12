@@ -3,7 +3,9 @@ import { ListboxContent, ListboxItem, ListboxRoot } from 'radix-vue'
 </script>
 
 <template>
-  <ListboxRoot class="w-48 h-72 flex flex-col p-1 rounded-lg border bg-white text-green9 mx-auto overflow-auto">
+  <ListboxRoot
+    class="w-48 h-72 flex flex-col p-1 rounded-lg border bg-white text-green9 mx-auto overflow-auto"
+  >
     <ListboxContent>
       <ListboxItem
         v-for="i in 20"

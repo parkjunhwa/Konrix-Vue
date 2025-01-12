@@ -8,7 +8,8 @@
   font-family: 'Spoqa Han Sans';
   font-weight: 100;
   font-style: normal;
-  src: url('/fonts/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+  src:
+    url('/fonts/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
     url('/fonts/SpoqaHanSansNeo-Thin.woff') format('woff');
 }
 
@@ -17,7 +18,8 @@
   font-family: 'Spoqa Han Sans';
   font-weight: 300;
   font-style: normal;
-  src: url('/fonts/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+  src:
+    url('/fonts/SpoqaHanSansNeo-Light.woff2') format('woff2'),
     url('/fonts/SpoqaHanSansNeo-Light.woff') format('woff');
 }
 
@@ -26,7 +28,8 @@
   font-family: 'Spoqa Han Sans';
   font-weight: 400;
   font-style: normal;
-  src: url('/fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+  src:
+    url('/fonts/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
     url('/fonts/SpoqaHanSansNeo-Regular.woff') format('woff');
 }
 
@@ -35,7 +38,8 @@
   font-family: 'Spoqa Han Sans';
   font-weight: 700;
   font-style: normal;
-  src: url('/fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+  src:
+    url('/fonts/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
     url('/fonts/SpoqaHanSansNeo-Bold.woff') format('woff');
 }
 
@@ -44,7 +48,8 @@
   font-family: 'Spoqa Han Sans';
   font-weight: 500;
   font-style: normal;
-  src: url('/fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+  src:
+    url('/fonts/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
     url('/fonts/SpoqaHanSansNeo-Medium.woff') format('woff');
 }
 
@@ -62,7 +67,7 @@
   --tw-sidenav-width: 250px;
   --tw-sidenav-width-md: 175px;
   --tw-sidenav-width-sm: 80px;
-  --tw-sidenav-sm-height: 1500px;
+  --tw-sidenav-sm-height: auto;
 
   --tw-topbar-height: 70px;
 

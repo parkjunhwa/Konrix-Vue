@@ -12,9 +12,7 @@ import './styles.css'
 
 <template>
   <PopoverRoot>
-    <PopoverTrigger class="PopoverTrigger">
-      More info
-    </PopoverTrigger>
+    <PopoverTrigger class="PopoverTrigger"> More info </PopoverTrigger>
     <PopoverPortal>
       <PopoverContent class="PopoverContent">
         Some more info...
