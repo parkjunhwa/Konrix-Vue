@@ -1,80 +1,80 @@
 <template>
   <Layout>
     <Breadcrumb title="타이틀 입력" subtitle="서브메뉴 입력" />
-    <div class="grid 2xl:grid-cols-12 gap-6 mb-6">
-      컴포넌트 정의
-      <ToolbarRoot
-        class="flex p-[10px] w-full max-w-[610px] !min-w-max rounded-md bg-white shadow-sm shadow-blackA7"
-        aria-label="Formatting options"
-      >
-        <ToolbarToggleGroup
-          v-model="toggleStateMultiple"
-          type="multiple"
-          aria-label="Text formatting"
-        >
-          <ToolbarToggleItem
-            class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
-            value="bold"
-            aria-label="Bold"
-          >
-            <Icon class="w-[15px] h-[15px]" icon="radix-icons:font-bold" />
-          </ToolbarToggleItem>
-          <ToolbarToggleItem
-            class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
-            value="italic"
-            aria-label="Italic"
-          >
-            <Icon class="w-[15px] h-[15px]" icon="radix-icons:font-italic" />
-          </ToolbarToggleItem>
-          <ToolbarToggleItem
-            class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
-            value="strikethrough"
-            aria-label="Strike through"
-          >
-            <Icon class="w-[15px] h-[15px]" icon="radix-icons:strikethrough" />
-          </ToolbarToggleItem>
-        </ToolbarToggleGroup>
-        <ToolbarSeparator class="w-[1px] bg-mauve6 mx-[10px]" />
-        <ToolbarToggleGroup v-model="toggleStateSingle" type="single" aria-label="Text Alignment">
-          <ToolbarToggleItem
-            class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
-            value="left"
-            aria-label="Left Aligned"
-          >
-            <Icon class="w-[15px] h-[15px]" icon="radix-icons:text-align-left" />
-          </ToolbarToggleItem>
-          <ToolbarToggleItem
-            class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
-            value="center"
-            aria-label="Center Aligned"
-          >
-            <Icon class="w-[15px] h-[15px]" icon="radix-icons:text-align-center" />
-          </ToolbarToggleItem>
-          <ToolbarToggleItem
-            class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
-            value="right"
-            aria-label="Right Aligned"
-          >
-            <Icon class="w-[15px] h-[15px]" icon="radix-icons:text-align-right" />
-          </ToolbarToggleItem>
-        </ToolbarToggleGroup>
-        <ToolbarSeparator class="w-[1px] bg-mauve6 mx-[10px]" />
-        <ToolbarLink
-          class="bg-transparent !font-normal !text-mauve11 inline-flex justify-center items-center hover:bg-transparent hover:cursor-pointer flex-shrink-0 flex-grow-0 basis-auto h-[25px] px-[5px] rounded text-[13px] leading-none bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
-          href="#"
-          target="_blank"
-          style="margin-right: 10"
-        >
-          Edited 2 hours ago
-        </ToolbarLink>
-        <ToolbarButton
-          class="px-[10px] text-white bg-blue9 flex-shrink-0 flex-grow-0 basis-auto h-[25px] rounded inline-flex text-[13px] leading-none items-center justify-center outline-none hover:bg-blue10 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7"
-          style="margin-left: auto"
-        >
-          공유
-        </ToolbarButton>
-      </ToolbarRoot>
+    <div class="grid grid-cols-12 gap-6 mb-6 w-full">
+      <div class="w-full">컴포넌트 정의 <br />컴포넌트 정의 <br /></div>
     </div>
+    <ToolbarRoot
+      class="flex p-[10px] w-full max-w-[610px] !min-w-max rounded-md bg-white shadow-sm shadow-blackA7"
+      aria-label="Formatting options"
+    >
+      <ToolbarToggleGroup
+        v-model="toggleStateMultiple"
+        type="multiple"
+        aria-label="Text formatting"
+      >
+        <ToolbarToggleItem
+          class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
+          value="bold"
+          aria-label="Bold"
+        >
+          <Icon class="w-[15px] h-[15px]" icon="radix-icons:font-bold" />
+        </ToolbarToggleItem>
+        <ToolbarToggleItem
+          class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
+          value="italic"
+          aria-label="Italic"
+        >
+          <Icon class="w-[15px] h-[15px]" icon="radix-icons:font-italic" />
+        </ToolbarToggleItem>
+        <ToolbarToggleItem
+          class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
+          value="strikethrough"
+          aria-label="Strike through"
+        >
+          <Icon class="w-[15px] h-[15px]" icon="radix-icons:strikethrough" />
+        </ToolbarToggleItem>
+      </ToolbarToggleGroup>
+      <ToolbarSeparator class="w-[1px] bg-mauve6 mx-[10px]" />
+      <ToolbarToggleGroup v-model="toggleStateSingle" type="single" aria-label="Text Alignment">
+        <ToolbarToggleItem
+          class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
+          value="left"
+          aria-label="Left Aligned"
+        >
+          <Icon class="w-[15px] h-[15px]" icon="radix-icons:text-align-left" />
+        </ToolbarToggleItem>
+        <ToolbarToggleItem
+          class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
+          value="center"
+          aria-label="Center Aligned"
+        >
+          <Icon class="w-[15px] h-[15px]" icon="radix-icons:text-align-center" />
+        </ToolbarToggleItem>
+        <ToolbarToggleItem
+          class="flex-shrink-0 flex-grow-0 basis-auto text-mauve11 h-[25px] px-[5px] rounded inline-flex text-[13px] leading-none items-center justify-center bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
+          value="right"
+          aria-label="Right Aligned"
+        >
+          <Icon class="w-[15px] h-[15px]" icon="radix-icons:text-align-right" />
+        </ToolbarToggleItem>
+      </ToolbarToggleGroup>
+      <ToolbarSeparator class="w-[1px] bg-mauve6 mx-[10px]" />
+      <ToolbarLink
+        class="bg-transparent !font-normal !text-mauve11 inline-flex justify-center items-center hover:bg-transparent hover:cursor-pointer flex-shrink-0 flex-grow-0 basis-auto h-[25px] px-[5px] rounded text-[13px] leading-none bg-white ml-0.5 outline-none hover:bg-blue3 hover:text-blue11 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7 first:ml-0 data-[state=on]:bg-blue5 data-[state=on]:text-blue11"
+        href="#"
+        target="_blank"
+        style="margin-right: 10"
+      >
+        Edited 2 hours ago
+      </ToolbarLink>
+      <ToolbarButton
+        class="px-[10px] text-white bg-blue9 flex-shrink-0 flex-grow-0 basis-auto h-[25px] rounded inline-flex text-[13px] leading-none items-center justify-center outline-none hover:bg-blue10 focus:relative focus:shadow-[0_0_0_2px] focus:shadow-blue7"
+        style="margin-left: auto"
+      >
+        공유
+      </ToolbarButton>
+    </ToolbarRoot>
     <div>
       <PopoverRoot>
         <PopoverTrigger

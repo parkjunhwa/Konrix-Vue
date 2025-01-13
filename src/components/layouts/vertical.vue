@@ -1,7 +1,7 @@
 <template>
-  <div class="flex wrapper flex-col">
+  <div class="flex wrapper">
     <Topbar class="fix" />
-    <div class="flex wrapper flex-row">
+    <div class="wrapper page-body">
       <Leftsidebar />
       <div class="page-content">
         <div class="flex flex-col content-area">

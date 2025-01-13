@@ -8,50 +8,14 @@
 
 @import 'mixins/mixins';
 
-@import 'components/radix';
-
 // Structure
 @import 'structure/sidenav';
 @import 'structure/topbar';
 
 // Components
 @import 'components/reboot';
-@import 'components/buttons';
-@import 'components/card';
-@import 'components/forms';
 @import 'components/print';
-@import 'components/helper';
 
-// Plugins (Extended UI Components)
-@import 'plugins/swiper';
-@import 'plugins/simplebar';
-@import 'plugins/prismjs';
-@import 'plugins/sweetalert2';
-@import 'plugins/sortablejs';
-@import 'plugins/tour';
-@import 'plugins/glightbox';
-@import 'plugins/tippy-tooltip';
-
-// Chart Plugins
-@import 'plugins/apexcharts';
-
-// Advanced Form Plugins
-@import 'plugins/dropzone';
-@import 'plugins/range-slider';
-@import 'plugins/flatpicker';
-@import 'plugins/colorpicker';
-@import 'plugins/choices';
-@import 'plugins/quilljs';
-
-// Data Table
-@import 'plugins/gridjs';
-
-// Map Plugins
-@import 'plugins/vector-maps';
-@import 'plugins/google-map';
-
-// App Pages Plugins
-@import 'plugins/fullcalendar';
 
 // 커스텀 css
 .logo-box {
@@ -64,18 +28,30 @@ div[data-radix-popper-content-wrapper] {
   z-index: 6;
 }
 
+.app-header {
+  position: fixed;
+  width: 100%;
+}
+
+.page-body {
+  flex-direction: row;
+  display: flex;
+  position: sticky;
+}
+
 .content-area {
-  height: calc(100vh - 70px);
-  top: 70px;
-  @apply sticky;
+  flex: 1;
 }
 
 .app-menu {
   z-index: 2;
+  top: 70px;
+  height: calc(100vh - 70px);
 }
 
 .page-content {
   z-index: 1;
+  padding-top: 70px;
 }
 
 html[data-sidenav-view=mobile].sidenav-enable .app-menu {
