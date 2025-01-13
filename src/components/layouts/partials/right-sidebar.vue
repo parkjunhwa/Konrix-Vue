@@ -16,7 +16,6 @@
         type="button"
         class="bg-white rounded-s-full shadow-lg p-2.5 ps-3 transition-all dark:bg-slate-800"
         @click="handleCustomizer"
-
       >
         <span class="sr-only">Setting</span>
         <span class="flex items-center justify-center animate-spin">
