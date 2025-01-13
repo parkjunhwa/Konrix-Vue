@@ -29,8 +29,10 @@ div[data-radix-popper-content-wrapper] {
 }
 
 .app-header {
-  position: fixed;
+  position: sticky;
+  display: flex;
   width: 100%;
+  
 }
 
 .page-body {
